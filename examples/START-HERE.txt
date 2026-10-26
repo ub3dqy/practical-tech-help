@@ -1,0 +1,30 @@
+PRACTICAL TECH HELP
+Dima Mak / ub3dqy
+
+ENGLISH
+1. Extract all files from the ZIP into a folder.
+2. Open index.html in your browser.
+3. Choose "Try an example" for a quick look, or use your own folder lists and notes.
+4. Use "Русский" at the top for the Russian version.
+
+Nothing is installed. The tools do not upload files or text, and they do not
+change your files.
+
+The folder check compares names and sizes, not file contents.
+The naming tool shows a plan and checks only the names supplied.
+The help-request tool puts your notes in order; it does not send a message.
+
+Portfolio: https://github.com/ub3dqy/practical-tech-help
+
+РУССКИЙ
+1. Распакуйте все файлы архива в одну папку.
+2. Откройте index.html в браузере.
+3. Нажмите "Русский" вверху страницы.
+4. Для быстрого знакомства нажмите "Попробовать пример".
+
+Ничего устанавливать не нужно. Файлы и текст никуда не загружаются.
+Исходные файлы не меняются.
+
+Сравнение папок проверяет имена и размеры, а не содержимое файлов.
+План переименования учитывает только переданные имена.
+Составленное обращение нужно отправить самостоятельно.

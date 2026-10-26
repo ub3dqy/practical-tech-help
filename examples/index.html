@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <title>Practical tech help | Dima Mak</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="tools.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-text="skip">Skip to the tools</a>
+  <header class="top">
+    <a class="brand" href="https://github.com/ub3dqy/practical-tech-help">Dima Mak <span>/ ub3dqy</span></a>
+    <div class="languages" aria-label="Language">
+      <button id="english" type="button" aria-pressed="true">English</button>
+      <button id="russian" type="button" aria-pressed="false" lang="ru">Русский</button>
+    </div>
+  </header>
+  <main id="main">
+    <div class="intro">
+      <p class="eyebrow" data-text="eyebrow">PRACTICAL TECH HELP</p>
+      <h1 data-text="title">A few useful tools. One less thing to do by hand.</h1>
+      <p class="lead" data-text="intro">Try the examples below. They run in this page and do not upload your files or text.</p>
+      <nav class="jump" aria-label="Tools">
+        <a href="#backup" data-text="navBackup">Check a folder copy</a>
+        <a href="#rename" data-text="navRename">Plan new file names</a>
+        <a href="#help" data-text="navHelp">Describe a problem</a>
+      </nav>
+    </div>
+    <section class="tool" id="backup" aria-labelledby="backup-title">
+      <div class="section-heading"><span class="number">01</span><div>
+        <h2 id="backup-title" data-text="backupTitle">What is missing from the copy?</h2>
+        <p data-text="backupIntro">Choose the original folder and its copy, or start with the example.</p>
+      </div></div>
+      <div class="two">
+        <label class="file-label"><span data-text="original">Original folder</span><input id="original" type="file" webkitdirectory multiple><small id="original-note"></small></label>
+        <label class="file-label"><span data-text="backup">Folder copy</span><input id="copy" type="file" webkitdirectory multiple><small id="copy-note"></small></label>
+      </div>
+      <div class="actions"><button class="primary" id="compare" type="button" data-text="compare">Compare folders</button><button id="backup-example" type="button" data-text="example">Try an example</button></div>
+      <p class="note" data-text="backupLimit">This checks names and file sizes, not the contents of a file. Nothing is moved, renamed or deleted. Up to 10,000 files per folder.</p>
+      <div id="backup-result" class="result" aria-live="polite"></div>
+    </section>
+    <section class="tool" id="rename" aria-labelledby="rename-title">
+      <div class="section-heading"><span class="number">02</span><div>
+        <h2 id="rename-title" data-text="renameTitle">Put a set of file names in order.</h2>
+        <p data-text="renameIntro">Preview names such as Trip-001.jpg before changing anything.</p>
+      </div></div>
+      <label><span data-text="names">Current file names, one per line</span><textarea id="names" rows="4" spellcheck="false">IMG_4821.jpg
+IMG_4822.jpg
+IMG_4823.png</textarea></label>
+      <div class="three">
+        <label><span data-text="prefix">Start each name with</span><input id="prefix" type="text" value="Trip" maxlength="70"></label>
+        <label><span data-text="firstNumber">First number</span><input id="first-number" type="number" value="1" min="0" step="1"></label>
+        <label><span data-text="digits">Minimum digits</span><input id="digits" type="number" value="3" min="1" max="8" step="1"></label>
+      </div>
+      <div class="actions"><button class="primary" id="plan" type="button" data-text="preview">Show the plan</button></div>
+      <p class="note" data-text="renameLimit">This is a preview. Check existing names in the same folder before using the plan. File endings such as .jpg are kept. Up to 5,000 names.</p>
+      <div id="rename-result" class="result" aria-live="polite"></div>
+    </section>
+    <section class="tool" id="help" aria-labelledby="help-title">
+      <div class="section-heading"><span class="number">03</span><div>
+        <h2 id="help-title" data-text="helpTitle">Make the problem easier to explain.</h2>
+        <p data-text="helpIntro">A few details often save a long back-and-forth. Fill in the first two boxes; the rest are optional.</p>
+      </div></div>
+      <div class="two">
+        <label><span data-text="goalLabel">What were you trying to do?</span><textarea id="goal" rows="3" maxlength="2000"></textarea></label>
+        <label><span data-text="happenedLabel">What happened instead?</span><textarea id="happened" rows="3" maxlength="2000"></textarea></label>
+      </div>
+      <label><span data-text="deviceLabel">Device and app</span><input id="device" type="text" maxlength="2000"></label>
+      <div class="two">
+        <label><span data-text="errorLabel">Exact message on screen, if there is one</span><textarea id="error" rows="3" maxlength="2000"></textarea></label>
+        <label><span data-text="triedLabel">What have you already tried?</span><textarea id="tried" rows="3" maxlength="2000"></textarea></label>
+      </div>
+      <div class="actions"><button class="primary" id="make-request" type="button" data-text="makeRequest">Put the message together</button></div>
+      <p class="note" data-text="helpLimit">Leave out passwords, sign-in codes and personal details. This page puts your notes in order; it does not diagnose the problem or send a message.</p>
+      <div id="help-result" class="result" aria-live="polite"></div>
+    </section>
+    <footer><p data-text="footer">Examples by Dima Mak / ub3dqy. A specific task, price and deadline are agreed before work starts.</p><a id="portfolio-link" href="../README.md" data-text="portfolio">Read the portfolio</a></footer>
+  </main>
+</body>
+</html>
