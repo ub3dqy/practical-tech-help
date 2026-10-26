@@ -60,6 +60,8 @@ We'll agree on what's included, the price, the deadline and the payment method b
 
 Reply in the conversation where you received this portfolio. If you already use GitHub, you can also [leave a short request here](https://github.com/ub3dqy/practical-tech-help/issues/new). Keep personal files and sign-in details out of public posts.
 
+For a small website fix, [book through Kwork](https://kwork.ru/website-repair/55310656/dorabotayu-sayt-ispravlyu-oshibki-i-dobavlyu-nuzhnie-funktsii). The listing is in Russian.
+
 **Dima Mak / ub3dqy**
 
 [Русская версия](README.ru.md) · [English PDF](portfolio-en.pdf) · [Spreadsheet and writing examples](https://github.com/ub3dqy/spreadsheet-cleanup-examples)

@@ -60,6 +60,8 @@
 
 Ответьте в той переписке, где получили портфолио. Если пользуетесь GitHub, можно [оставить короткий запрос здесь](https://github.com/ub3dqy/practical-tech-help/issues/new). Личные файлы и данные для входа в открытом обращении не размещайте.
 
+Небольшую доработку сайта можно [заказать на Kwork](https://kwork.ru/website-repair/55310656/dorabotayu-sayt-ispravlyu-oshibki-i-dobavlyu-nuzhnie-funktsii).
+
 **Dima Mak / ub3dqy**
 
 [English version](README.md) · [PDF на русском](portfolio-ru.pdf) · [Примеры работы с таблицами и текстами](https://github.com/ub3dqy/spreadsheet-cleanup-examples)

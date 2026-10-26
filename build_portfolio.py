@@ -10,6 +10,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, 
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://github.com/ub3dqy/practical-tech-help"
+KWORK_URL = "https://kwork.ru/website-repair/55310656/dorabotayu-sayt-ispravlyu-oshibki-i-dobavlyu-nuzhnie-funktsii"
 FONT_DIR = Path("C:/Windows/Fonts")
 INK = colors.HexColor("#203536")
 MUTED = colors.HexColor("#536968")
@@ -61,6 +62,7 @@ DATA = {
         "reply": "Reply in the conversation where you received this portfolio, or leave a short request on GitHub. Keep personal files and sign-in details out of public posts.",
         "open": "Open the portfolio and example downloads",
         "request": "Leave a short request",
+        "booking": "Book a small website fix on Kwork (Russian listing)",
     },
     "ru": {
         "label": "ПОРТФОЛИО / РУССКИЙ",
@@ -97,6 +99,7 @@ DATA = {
         "reply": "Ответьте в той переписке, где получили портфолио, или оставьте короткий запрос на GitHub. Личные файлы и данные для входа в открытом обращении не размещайте.",
         "open": "Открыть портфолио и скачать примеры",
         "request": "Оставить короткий запрос",
+        "booking": "Заказать небольшую доработку сайта на Kwork",
     }
 }
 
@@ -156,7 +159,7 @@ def build(language):
     p(data["terms"])
     p(data["reply"],"small")
     link(data["request"],BASE+"/issues/new")
-    link(BASE,BASE)
+    link(data["booking"],KWORK_URL)
     def page(canvas,doc):
         width,height = A4
         canvas.saveState()
