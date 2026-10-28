@@ -56,6 +56,15 @@ DATA = {
         ],
         "accepted": "View the accepted change",
         "workNote": "These changes improved the instructions. The applications themselves belong to their respective projects.",
+        "reviewPageNote": "The next page shows two code fixes currently awaiting maintainer review.",
+        "pendingTitle": "Code fixes awaiting review",
+        "pendingIntro": "Two public pull requests with regression tests and verification notes.",
+        "pendingWork": [
+            ("Tablib - Python 3.15 compatibility", "Restores format registration after a Python standard-library change.", "Checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/714"),
+            ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619")
+        ],
+        "proposed": "View the proposed fix and checks",
+        "pendingStatus": "As of 28 October 2026 (UTC), both proposals are open and awaiting maintainer review.",
         "contactTitle": "Tell me what you're trying to do",
         "contact": "Send a few lines about what you wanted to do and what happened instead. Include the error message, if there is one, or a screenshot with personal details hidden.",
         "terms": "We'll agree on what's included, the price, the deadline and the payment method before work starts. I'm registered as an individual entrepreneur. If you need business paperwork, let me know when you describe the task.",
@@ -93,6 +102,15 @@ DATA = {
         ],
         "accepted": "Посмотреть принятое изменение",
         "workNote": "Эти изменения касались инструкций. Сами приложения принадлежат соответствующим проектам.",
+        "reviewPageNote": "На следующей странице - два исправления, ожидающие проверки авторов проектов.",
+        "pendingTitle": "Исправления на рассмотрении",
+        "pendingIntro": "Два открытых предложения с проверками и описанием результата.",
+        "pendingWork": [
+            ("Tablib - совместимость с Python 3.15", "Восстановлена работа форматов после изменения в стандартной библиотеке Python.", "Проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/714"),
+            ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619")
+        ],
+        "proposed": "Посмотреть исправление и проверки",
+        "pendingStatus": "На 28 октября 2026 года (UTC) оба предложения открыты и ожидают проверки авторов проектов.",
         "contactTitle": "Расскажите, что не получается",
         "contact": "Напишите, что вы хотели сделать и что вышло вместо этого. Если есть ошибка, пришлите её текст или снимок экрана со скрытыми личными данными.",
         "terms": "До начала работы договоримся о задаче, цене, сроке и способе оплаты. Есть статус ИП; оформление можно обсудить вместе с задачей.",
@@ -153,6 +171,16 @@ def build(language):
         p(description)
         link(data["accepted"],url)
     p(data["workNote"],"small")
+    p(data["reviewPageNote"],"small")
+    story.append(PageBreak())
+    p(data["pendingTitle"],"title")
+    p(data["pendingIntro"],"intro")
+    for title,description,checks,url in data["pendingWork"]:
+        p(title,"heading")
+        p(description)
+        p(checks,"small")
+        link(data["proposed"],url)
+    p(data["pendingStatus"],"small")
     rule()
     p(data["contactTitle"],"heading")
     p(data["contact"])
@@ -174,7 +202,7 @@ def build(language):
         canvas.setFillColor(MUTED)
         canvas.setFont("Text",8)
         canvas.drawString(44,24,"Dima Mak / ub3dqy")
-        canvas.drawRightString(width-44,24,str(doc.page)+" / 3")
+        canvas.drawRightString(width-44,24,str(doc.page)+" / 4")
         canvas.restoreState()
     filename = ROOT/("portfolio-"+language+".pdf")
     doc = SimpleDocTemplate(str(filename),pagesize=A4,leftMargin=44,rightMargin=44,topMargin=64,bottomMargin=52,title=data["title"],author="Dima Mak / ub3dqy",subject="Practical technology help portfolio",pageCompression=1)

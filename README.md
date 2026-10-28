@@ -52,6 +52,15 @@ These are contributions to existing projects, made through my GitHub account **u
 
 These changes improved the instructions. The applications themselves belong to their respective projects.
 
+## Code fixes awaiting review
+
+These two public pull requests include regression tests and verification notes:
+
+- **Tablib - Python 3.15 compatibility.** Restores format registration after a Python standard-library change. [Proposed fix](https://github.com/jazzband/tablib/pull/714).
+- **Filament - decimal values in JSON.** Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation. [Proposed fix](https://github.com/galaxy-io/filament/pull/619).
+
+Both proposals are open and awaiting maintainer review as of 28 October 2026 (UTC).
+
 ## Tell me what you're trying to do
 
 Send a few lines about what you wanted to do and what happened instead. Include the error message, if there is one, or a screenshot with personal details hidden.
