@@ -52,21 +52,21 @@ DATA = {
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
-            ("A less confusing first exercise", "Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19")
+            ("A less confusing first exercise", "Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
+            ("Tablib - Python 3.15 compatibility", "Built-in formats register on first use while preserving lazy imports. Merged after maintainer review; checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715")
         ],
         "accepted": "View the accepted change",
-        "workNote": "These changes improved the instructions. The applications themselves belong to their respective projects.",
-        "reviewPageNote": "The next page shows four technical contributions awaiting maintainer review.",
+        "workNote": "Three documentation improvements and one code fix. The applications belong to their respective projects.",
+        "reviewPageNote": "The next page shows three technical contributions awaiting maintainer review.",
         "pendingTitle": "Technical contributions awaiting review",
-        "pendingIntro": "Four public proposals with checks and verification notes.",
+        "pendingIntro": "Three public proposals with checks and verification notes.",
         "pendingWork": [
-            ("Tablib - Python 3.15 compatibility", "Registers formats on demand while preserving lazy imports.", "Checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - SFTP memory guidance", "Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example.", "Documentation build and targeted checks passed.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711")
         ],
         "proposed": "View the proposed fix and checks",
-        "pendingStatus": "As of 29 October 2026 (UTC), all four proposals are open and awaiting maintainer review.",
+        "pendingStatus": "As of 29 October 2026 (UTC), all three proposals are open and awaiting maintainer review.",
         "peerTitle": "Independent code reviews",
         "peerIntro": "The original proposals belong to other contributors. These are my published findings, checks and proposed correction.",
         "peerWork": [
@@ -110,21 +110,21 @@ DATA = {
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
-            ("Яснее первые шаги учебной работы", "В Data Engineering Launchpad уточнено, с чего начать, а пример ожидаемого отчёта стал удобнее читать.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19")
+            ("Яснее первые шаги учебной работы", "В Data Engineering Launchpad уточнено, с чего начать, а пример ожидаемого отчёта стал удобнее читать.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
+            ("Tablib - совместимость с Python 3.15", "Регистрация форматов по первому запросу сохраняет отложенную загрузку. Исправление принято; проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715")
         ],
         "accepted": "Посмотреть принятое изменение",
-        "workNote": "Эти изменения касались инструкций. Сами приложения принадлежат соответствующим проектам.",
-        "reviewPageNote": "На следующей странице - четыре предложения, ожидающие проверки авторов проектов.",
+        "workNote": "Три улучшения инструкций и одно исправление кода. Сами приложения принадлежат соответствующим проектам.",
+        "reviewPageNote": "На следующей странице - три предложения, ожидающие проверки авторов проектов.",
         "pendingTitle": "Исправления и инструкции на рассмотрении",
-        "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
+        "pendingIntro": "Три открытых предложения с проверками и описанием результата.",
         "pendingWork": [
-            ("Tablib - совместимость с Python 3.15", "Регистрация форматов по запросу сохраняет отложенную загрузку.", "Проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - расход памяти при чтении SFTP", "Объяснено, почему ограничение одновременных запросов не ограничивает весь буфер; добавлен пример чтения небольшими порциями.", "Сборка инструкции и отдельные проверки пройдены.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711")
         ],
         "proposed": "Посмотреть исправление и проверки",
-        "pendingStatus": "На 29 октября 2026 года (UTC) все четыре предложения открыты и ожидают проверки авторов проектов.",
+        "pendingStatus": "На 29 октября 2026 года (UTC) все три предложения открыты и ожидают проверки авторов проектов.",
         "peerTitle": "Независимая проверка чужих изменений",
         "peerIntro": "Исходные предложения принадлежат другим разработчикам. Здесь - мои результаты проверки, воспроизведение ошибок и предложенная поправка.",
         "peerWork": [
