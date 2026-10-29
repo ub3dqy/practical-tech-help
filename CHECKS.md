@@ -23,9 +23,9 @@ The built-in folder example, naming preview, collision warning, request form, la
 
 The accepted contributions linked from the portfolio are documentation changes to existing projects. They are not claims of authorship of those applications or paid client engagements.
 
-The technical-contribution examples link to open Tablib, Filament and Paramiko pull requests as of 29 October 2026 (UTC). Their checks and verification notes are linked from each proposal. They await maintainer review.
+The technical-contribution examples link to open Tablib, Filament and Paramiko pull requests as of 29 October 2026 (UTC). Their checks and verification notes are linked from each proposal. They await maintainer review. Tablib #715 replaces #714, which was closed because its eager imports lost the lazy-loading benefit. The revised proposal registers formats on demand and passes the suites on Python 3.14 and 3.15.
 
-The independent reviews link to proposals authored by other contributors. The published reviews include dynamic-column validation, a tested JSON-import correction, and reproductions of missing transcript messages and hidden-map fitting failures. These reviews await feedback as of 29 October 2026 (UTC). The Happy checks cover its transcript scanner; the map checks cover the frontend in Edge, without a full WordPress installation.
+The independent reviews link to proposals authored by other contributors. The published reviews include dynamic-column validation, a tested JSON-import correction, and reproductions of missing transcript messages and hidden-map fitting failures. Tablib #663 was closed as a duplicate of #709; the proposed correction has not been accepted. The other three reviews await feedback as of 29 October 2026 (UTC). The Happy checks cover its transcript scanner; the map checks cover the frontend in Edge, without a full WordPress installation.
 
 ## Rebuild the PDF versions
 

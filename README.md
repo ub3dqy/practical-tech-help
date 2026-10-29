@@ -56,7 +56,7 @@ These changes improved the instructions. The applications themselves belong to t
 
 These four public proposals include checks and verification notes:
 
-- **Tablib - Python 3.15 compatibility.** Restores format registration after a Python standard-library change. [Proposed fix](https://github.com/jazzband/tablib/pull/714).
+- **Tablib - Python 3.15 compatibility.** Restores format registration on demand while preserving lazy imports. Checks passed on Python 3.14 and 3.15. [Revised proposal](https://github.com/jazzband/tablib/pull/715).
 - **Filament - decimal values in JSON.** Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation. [Proposed fix](https://github.com/galaxy-io/filament/pull/619).
 - **Paramiko - SFTP memory guidance.** Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example. [Proposed documentation](https://github.com/paramiko/paramiko/pull/2710).
 - **Paramiko - an empty SFTP read request.** Prevents an empty `readv` call from starting a remote prefetch. [Proposed fix](https://github.com/paramiko/paramiko/pull/2711).
@@ -68,11 +68,11 @@ All four proposals are open and awaiting maintainer review as of 29 October 2026
 I also review changes proposed by other contributors, reproduce failures and suggest focused corrections.
 
 - **Tablib - checking a dynamic-column fix.** Ran the existing tests on Python 3.14 and additional cases on Python 3.14 and 3.15. [Published review](https://github.com/jazzband/tablib/pull/695#pullrequestreview-5693590289).
-- **Tablib - JSON import data loss.** Reproduced dropped fields and a crash on an empty object. Sent a correction that passes 185 tests. [Review and tested correction](https://github.com/jazzband/tablib/pull/663#pullrequestreview-5693844761).
+- **Tablib - JSON import data loss.** Reproduced dropped fields and a crash on an empty object. Sent a correction that passes 185 tests. The original proposal was then closed as a duplicate of #709; this correction has not been accepted. [Review and tested correction](https://github.com/jazzband/tablib/pull/663#pullrequestreview-5693844761).
 - **Happy - missing transcript messages.** Reproduced two file-rewrite cases that skip messages in the transcript scanner on Windows and Linux. [Findings and reproduction](https://github.com/slopus/happy/pull/1915#pullrequestreview-5694345644).
 - **WordPress map - hidden tabs.** Reproduced a marker-fitting failure in Edge and suggested delaying the fit until the map has a visible size. A full WordPress installation was not tested. [Findings and reproduction](https://github.com/mcguffin/acf-openstreetmap-field/pull/139#pullrequestreview-5695128035).
 
-The original changes belong to their authors. My contributions are the linked review findings, checks and proposed correction. These reviews await feedback as of 29 October 2026 (UTC).
+The original changes belong to their authors. My contributions are the linked review findings, checks and proposed correction. The other three reviews await feedback as of 29 October 2026 (UTC).
 
 ## Tell me what you're trying to do
 

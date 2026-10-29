@@ -60,7 +60,7 @@ DATA = {
         "pendingTitle": "Technical contributions awaiting review",
         "pendingIntro": "Four public proposals with checks and verification notes.",
         "pendingWork": [
-            ("Tablib - Python 3.15 compatibility", "Restores format registration after a Python standard-library change.", "Checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/714"),
+            ("Tablib - Python 3.15 compatibility", "Registers formats on demand while preserving lazy imports.", "Checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - SFTP memory guidance", "Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example.", "Documentation build and targeted checks passed.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711")
@@ -76,7 +76,7 @@ DATA = {
             ("Happy - missing transcript messages", "Reproduced two file-rewrite cases that skip messages in the transcript scanner on Windows and Linux.", [("Findings and reproduction", "https://github.com/slopus/happy/pull/1915#pullrequestreview-5694345644")]),
             ("WordPress map - hidden tabs", "Reproduced a marker-fitting failure in Edge and suggested fitting after the map becomes visible. A full WordPress installation was not tested.", [("Findings and reproduction", "https://github.com/mcguffin/acf-openstreetmap-field/pull/139#pullrequestreview-5695128035")])
         ],
-        "peerStatus": "These reviews await feedback as of 29 October 2026 (UTC).",
+        "peerStatus": "As of 29 October 2026 (UTC), Tablib #663 was closed as a duplicate of #709; the correction has not been accepted. The other three reviews await feedback.",
         "contactTitle": "Tell me what you're trying to do",
         "contact": "Send a few lines about what you wanted to do and what happened instead. Include the error message, if there is one, or a screenshot with personal details hidden.",
         "terms": "We'll agree on what's included, the price, the deadline and the payment method before work starts. I'm registered as an individual entrepreneur. If you need business paperwork, let me know when you describe the task.",
@@ -118,7 +118,7 @@ DATA = {
         "pendingTitle": "Исправления и инструкции на рассмотрении",
         "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
         "pendingWork": [
-            ("Tablib - совместимость с Python 3.15", "Восстановлена работа форматов после изменения в стандартной библиотеке Python.", "Проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/714"),
+            ("Tablib - совместимость с Python 3.15", "Регистрация форматов по запросу сохраняет отложенную загрузку.", "Проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - расход памяти при чтении SFTP", "Объяснено, почему ограничение одновременных запросов не ограничивает весь буфер; добавлен пример чтения небольшими порциями.", "Сборка инструкции и отдельные проверки пройдены.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711")
@@ -134,7 +134,7 @@ DATA = {
             ("Happy - пропущенные сообщения", "В Windows и Linux воспроизведены два случая перезаписи файла, при которых обработчик истории пропускает сообщения.", [("Ошибка и её воспроизведение", "https://github.com/slopus/happy/pull/1915#pullrequestreview-5694345644")]),
             ("Карта WordPress - скрытые вкладки", "В Edge воспроизведён сбой подбора масштаба; предложено дождаться видимого размера карты. Полная установка WordPress не проверялась.", [("Ошибка и её воспроизведение", "https://github.com/mcguffin/acf-openstreetmap-field/pull/139#pullrequestreview-5695128035")])
         ],
-        "peerStatus": "На 29 октября 2026 года (UTC) отзывы ожидают ответа.",
+        "peerStatus": "На 29 октября 2026 года (UTC) Tablib #663 закрыт как повтор #709; поправка не принята. Остальные три отзыва ожидают ответа.",
         "contactTitle": "Расскажите, что не получается",
         "contact": "Напишите, что вы хотели сделать и что вышло вместо этого. Если есть ошибка, пришлите её текст или снимок экрана со скрытыми личными данными.",
         "terms": "До начала работы договоримся о задаче, цене, сроке и способе оплаты. Есть статус ИП; оформление можно обсудить вместе с задачей.",
