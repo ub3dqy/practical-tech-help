@@ -23,10 +23,12 @@ The built-in folder example, naming preview, collision warning, request form, la
 
 The accepted contributions linked from the portfolio are documentation changes to existing projects. They are not claims of authorship of those applications or paid client engagements.
 
-The separate code-fix examples link to open Tablib and Filament pull requests as of 28 October 2026 (UTC). Their regression tests and verification notes are linked from each proposal. They await maintainer review and are kept separate from accepted contributions.
+The technical-contribution examples link to open Tablib, Filament and Paramiko pull requests as of 29 October 2026 (UTC). Their checks and verification notes are linked from each proposal. They await maintainer review.
+
+The independent reviews link to proposals authored by other contributors. The published reviews include dynamic-column validation, a tested JSON-import correction, and reproductions of missing transcript messages and hidden-map fitting failures. These reviews await feedback as of 29 October 2026 (UTC). The Happy checks cover its transcript scanner; the map checks cover the frontend in Edge, without a full WordPress installation.
 
 ## Rebuild the PDF versions
 
 Run build_portfolio.py with Python, ReportLab and the Segoe UI / Georgia fonts installed. README.md and ENGLISH.md link to portfolio-en.pdf; README.ru.md links to portfolio-ru.pdf.
 
-Each PDF has four pages: services, example tools, accepted documentation contributions, and code fixes awaiting review with contact details.
+Each PDF has five pages: services, example tools, accepted documentation contributions, technical contributions awaiting review, and independent code reviews with contact details.

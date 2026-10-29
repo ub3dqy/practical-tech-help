@@ -56,15 +56,27 @@ DATA = {
         ],
         "accepted": "View the accepted change",
         "workNote": "These changes improved the instructions. The applications themselves belong to their respective projects.",
-        "reviewPageNote": "The next page shows two code fixes currently awaiting maintainer review.",
-        "pendingTitle": "Code fixes awaiting review",
-        "pendingIntro": "Two public pull requests with regression tests and verification notes.",
+        "reviewPageNote": "The next page shows four technical contributions awaiting maintainer review.",
+        "pendingTitle": "Technical contributions awaiting review",
+        "pendingIntro": "Four public proposals with checks and verification notes.",
         "pendingWork": [
             ("Tablib - Python 3.15 compatibility", "Restores format registration after a Python standard-library change.", "Checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/714"),
-            ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619")
+            ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("Paramiko - SFTP memory guidance", "Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example.", "Documentation build and targeted checks passed.", "https://github.com/paramiko/paramiko/pull/2710"),
+            ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711")
         ],
         "proposed": "View the proposed fix and checks",
-        "pendingStatus": "As of 28 October 2026 (UTC), both proposals are open and awaiting maintainer review.",
+        "pendingStatus": "As of 29 October 2026 (UTC), all four proposals are open and awaiting maintainer review.",
+        "peerTitle": "Independent code reviews",
+        "peerIntro": "The original proposals belong to other contributors. These are my published findings, checks and proposed correction.",
+        "peerWork": [
+            ("Tablib - JSON imports and dynamic columns", "Reproduced dropped fields and an empty-object crash; a proposed correction passes 185 tests. Also checked a dynamic-column fix on Python 3.14, with additional cases on 3.14 and 3.15.", [
+                ("Import review and tested correction", "https://github.com/jazzband/tablib/pull/663#pullrequestreview-5693844761"),
+                ("Dynamic-column validation", "https://github.com/jazzband/tablib/pull/695#pullrequestreview-5693590289")]),
+            ("Happy - missing transcript messages", "Reproduced two file-rewrite cases that skip messages in the transcript scanner on Windows and Linux.", [("Findings and reproduction", "https://github.com/slopus/happy/pull/1915#pullrequestreview-5694345644")]),
+            ("WordPress map - hidden tabs", "Reproduced a marker-fitting failure in Edge and suggested fitting after the map becomes visible. A full WordPress installation was not tested.", [("Findings and reproduction", "https://github.com/mcguffin/acf-openstreetmap-field/pull/139#pullrequestreview-5695128035")])
+        ],
+        "peerStatus": "These reviews await feedback as of 29 October 2026 (UTC).",
         "contactTitle": "Tell me what you're trying to do",
         "contact": "Send a few lines about what you wanted to do and what happened instead. Include the error message, if there is one, or a screenshot with personal details hidden.",
         "terms": "We'll agree on what's included, the price, the deadline and the payment method before work starts. I'm registered as an individual entrepreneur. If you need business paperwork, let me know when you describe the task.",
@@ -102,15 +114,27 @@ DATA = {
         ],
         "accepted": "Посмотреть принятое изменение",
         "workNote": "Эти изменения касались инструкций. Сами приложения принадлежат соответствующим проектам.",
-        "reviewPageNote": "На следующей странице - два исправления, ожидающие проверки авторов проектов.",
-        "pendingTitle": "Исправления на рассмотрении",
-        "pendingIntro": "Два открытых предложения с проверками и описанием результата.",
+        "reviewPageNote": "На следующей странице - четыре предложения, ожидающие проверки авторов проектов.",
+        "pendingTitle": "Исправления и инструкции на рассмотрении",
+        "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
         "pendingWork": [
             ("Tablib - совместимость с Python 3.15", "Восстановлена работа форматов после изменения в стандартной библиотеке Python.", "Проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/714"),
-            ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619")
+            ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("Paramiko - расход памяти при чтении SFTP", "Объяснено, почему ограничение одновременных запросов не ограничивает весь буфер; добавлен пример чтения небольшими порциями.", "Сборка инструкции и отдельные проверки пройдены.", "https://github.com/paramiko/paramiko/pull/2710"),
+            ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711")
         ],
         "proposed": "Посмотреть исправление и проверки",
-        "pendingStatus": "На 28 октября 2026 года (UTC) оба предложения открыты и ожидают проверки авторов проектов.",
+        "pendingStatus": "На 29 октября 2026 года (UTC) все четыре предложения открыты и ожидают проверки авторов проектов.",
+        "peerTitle": "Независимая проверка чужих изменений",
+        "peerIntro": "Исходные предложения принадлежат другим разработчикам. Здесь - мои результаты проверки, воспроизведение ошибок и предложенная поправка.",
+        "peerWork": [
+            ("Tablib - чтение JSON и вычисляемые столбцы", "Воспроизведены пропажа полей и сбой на пустом объекте; поправка проходит 185 проверок. Также проверено исправление вычисляемых столбцов на Python 3.14 с дополнительными случаями на 3.14 и 3.15.", [
+                ("Отзыв и проверенная поправка", "https://github.com/jazzband/tablib/pull/663#pullrequestreview-5693844761"),
+                ("Проверка вычисляемых столбцов", "https://github.com/jazzband/tablib/pull/695#pullrequestreview-5693590289")]),
+            ("Happy - пропущенные сообщения", "В Windows и Linux воспроизведены два случая перезаписи файла, при которых обработчик истории пропускает сообщения.", [("Ошибка и её воспроизведение", "https://github.com/slopus/happy/pull/1915#pullrequestreview-5694345644")]),
+            ("Карта WordPress - скрытые вкладки", "В Edge воспроизведён сбой подбора масштаба; предложено дождаться видимого размера карты. Полная установка WordPress не проверялась.", [("Ошибка и её воспроизведение", "https://github.com/mcguffin/acf-openstreetmap-field/pull/139#pullrequestreview-5695128035")])
+        ],
+        "peerStatus": "На 29 октября 2026 года (UTC) отзывы ожидают ответа.",
         "contactTitle": "Расскажите, что не получается",
         "contact": "Напишите, что вы хотели сделать и что вышло вместо этого. Если есть ошибка, пришлите её текст или снимок экрана со скрытыми личными данными.",
         "terms": "До начала работы договоримся о задаче, цене, сроке и способе оплаты. Есть статус ИП; оформление можно обсудить вместе с задачей.",
@@ -181,6 +205,15 @@ def build(language):
         p(checks,"small")
         link(data["proposed"],url)
     p(data["pendingStatus"],"small")
+    story.append(PageBreak())
+    p(data["peerTitle"],"title")
+    p(data["peerIntro"],"intro")
+    for title,description,links in data["peerWork"]:
+        p(title,"heading")
+        p(description)
+        for label,url in links:
+            link(label,url)
+    p(data["peerStatus"],"small")
     rule()
     p(data["contactTitle"],"heading")
     p(data["contact"])
@@ -202,7 +235,7 @@ def build(language):
         canvas.setFillColor(MUTED)
         canvas.setFont("Text",8)
         canvas.drawString(44,24,"Dima Mak / ub3dqy")
-        canvas.drawRightString(width-44,24,str(doc.page)+" / 4")
+        canvas.drawRightString(width-44,24,str(doc.page)+" / 5")
         canvas.restoreState()
     filename = ROOT/("portfolio-"+language+".pdf")
     doc = SimpleDocTemplate(str(filename),pagesize=A4,leftMargin=44,rightMargin=44,topMargin=64,bottomMargin=52,title=data["title"],author="Dima Mak / ub3dqy",subject="Practical technology help portfolio",pageCompression=1)
