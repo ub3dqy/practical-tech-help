@@ -50,18 +50,21 @@ These are contributions to existing projects, made through my GitHub account **u
 - **Fewer steps to get the example files.** Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough. [Accepted change](https://github.com/DepressionCenter/ShareR/pull/36).
 - **A less confusing first exercise.** Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad. [Accepted change](https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19).
 - **Tablib - Python 3.15 compatibility.** Built-in formats register on first use while preserving lazy imports. The fix was merged after maintainer review; checks passed on Python 3.14 and 3.15. [Accepted fix](https://github.com/jazzband/tablib/pull/715).
+- **Go-Hybrid - JSON error handling.** Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review. [Accepted fix](https://github.com/limitlessprojects/Go-Hybrid/pull/1518) · [Maintainer feedback](https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209).
+- **Error Translator - import error hints.** Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged. [Accepted fix](https://github.com/gourabanandad/error-translator-cli-v2/pull/120) · [Accepted clarification](https://github.com/gourabanandad/error-translator-cli-v2/pull/121).
 
-Three documentation improvements and one code fix. The applications themselves belong to their respective projects.
+Three documentation improvements and three code fixes. The applications themselves belong to their respective projects.
 
 ## Technical contributions awaiting review
 
-These three public proposals include checks and verification notes:
+These four public proposals include checks and verification notes:
 
 - **Filament - decimal values in JSON.** Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation. [Proposed fix](https://github.com/galaxy-io/filament/pull/619).
 - **Paramiko - SFTP memory guidance.** Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example. [Proposed documentation](https://github.com/paramiko/paramiko/pull/2710).
 - **Paramiko - an empty SFTP read request.** Prevents an empty `readv` call from starting a remote prefetch. [Proposed fix](https://github.com/paramiko/paramiko/pull/2711).
+- **Image processing on Linux.** Converts, resizes, crops and adjusts images, with watermarks and metadata removal. File access, time and resources are bounded. All 356 local tests passed, including two real Ollama tool calls; GitHub checks await maintainer approval. [Proposed tool and verification](https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/61).
 
-All three proposals are open and awaiting maintainer review as of 29 October 2026 (UTC).
+All four proposals are open and awaiting maintainer review as of 30 October 2026 (UTC).
 
 ## Independent code reviews
 

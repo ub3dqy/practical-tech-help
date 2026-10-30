@@ -47,26 +47,35 @@ DATA = {
         ],
         "startTitle": "Try them without installing anything",
         "start": "Download the example ZIP from the portfolio, extract all the files and open index.html. English is the default; the Russian button switches the page. Your files and text are not uploaded.",
-        "workTitle": "Improvements accepted by other projects",
-        "workIntro": "These contributions were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
+        "workTitle": "Accepted documentation improvements",
+        "workIntro": "These three documentation improvements were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
+        "codeWorkTitle": "Code fixes accepted by maintainers",
+        "codeWorkIntro": "These three fixes were merged into their projects. The links include the requested clarification and maintainer feedback.",
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
             ("A less confusing first exercise", "Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
-            ("Tablib - Python 3.15 compatibility", "Built-in formats register on first use while preserving lazy imports. Merged after maintainer review; checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715")
+            ("Tablib - Python 3.15 compatibility", "Built-in formats register on first use while preserving lazy imports. Merged after maintainer review; checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715"),
+            ("Go-Hybrid - JSON error handling", "Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
+            ("Error Translator - import error hints", "Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
+        "workLinks": {
+            "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Maintainer feedback", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
+            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Accepted clarification", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
+        },
         "accepted": "View the accepted change",
-        "workNote": "Three documentation improvements and one code fix. The applications belong to their respective projects.",
-        "reviewPageNote": "The next page shows three technical contributions awaiting maintainer review.",
+        "workNote": "Three documentation improvements and three code fixes. The applications belong to their respective projects.",
+        "reviewPageNote": "The next page shows four technical contributions awaiting maintainer review.",
         "pendingTitle": "Technical contributions awaiting review",
-        "pendingIntro": "Three public proposals with checks and verification notes.",
+        "pendingIntro": "Four public proposals with checks and verification notes.",
         "pendingWork": [
             ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - SFTP memory guidance", "Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example.", "Documentation build and targeted checks passed.", "https://github.com/paramiko/paramiko/pull/2710"),
-            ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711")
+            ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711"),
+            ("Image processing on Linux", "Converts, resizes, crops and adjusts images, with watermarks and metadata removal. File access, time and resources are bounded.", "356 local tests passed, including two real Ollama tool calls. GitHub checks await maintainer approval.", "https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/61")
         ],
         "proposed": "View the proposed fix and checks",
-        "pendingStatus": "As of 29 October 2026 (UTC), all three proposals are open and awaiting maintainer review.",
+        "pendingStatus": "As of 30 October 2026 (UTC), all four proposals are open and awaiting maintainer review.",
         "peerTitle": "Independent code reviews",
         "peerIntro": "The original proposals belong to other contributors. These are my published findings, checks and proposed correction.",
         "peerWork": [
@@ -105,26 +114,35 @@ DATA = {
         ],
         "startTitle": "Попробовать без установки",
         "start": "Скачайте ZIP с примерами, распакуйте все файлы и откройте index.html. По умолчанию включён английский; кнопка «Русский» переводит страницу. Файлы и текст никуда не загружаются.",
-        "workTitle": "Улучшения, принятые в других проектах",
-        "workIntro": "Эти изменения отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
+        "workTitle": "Принятые улучшения инструкций",
+        "workIntro": "Эти три улучшения инструкций отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
+        "codeWorkTitle": "Исправления кода, принятые проектами",
+        "codeWorkIntro": "Эти три исправления включены в проекты. По ссылкам доступны принятое пояснение и отзыв сопровождающего.",
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
             ("Яснее первые шаги учебной работы", "В Data Engineering Launchpad уточнено, с чего начать, а пример ожидаемого отчёта стал удобнее читать.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
-            ("Tablib - совместимость с Python 3.15", "Регистрация форматов по первому запросу сохраняет отложенную загрузку. Исправление принято; проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715")
+            ("Tablib - совместимость с Python 3.15", "Регистрация форматов по первому запросу сохраняет отложенную загрузку. Исправление принято; проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715"),
+            ("Go-Hybrid - обработка ошибок JSON", "Ошибка преобразования возвращается вызывающей стороне; неверные идентификаторы не меняют выходные данные. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
+            ("Error Translator - подсказки при ошибке импорта", "Исправлены обработка отсутствующего модуля и подсказки близких имён. Исправление и запрошенное пояснение включены в проект.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
+        "workLinks": {
+            "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Отзыв сопровождающего", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
+            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Принятое пояснение", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
+        },
         "accepted": "Посмотреть принятое изменение",
-        "workNote": "Три улучшения инструкций и одно исправление кода. Сами приложения принадлежат соответствующим проектам.",
-        "reviewPageNote": "На следующей странице - три предложения, ожидающие проверки авторов проектов.",
+        "workNote": "Три улучшения инструкций и три исправления кода. Сами приложения принадлежат соответствующим проектам.",
+        "reviewPageNote": "На следующей странице - четыре предложения, ожидающие проверки авторов проектов.",
         "pendingTitle": "Исправления и инструкции на рассмотрении",
-        "pendingIntro": "Три открытых предложения с проверками и описанием результата.",
+        "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
         "pendingWork": [
             ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - расход памяти при чтении SFTP", "Объяснено, почему ограничение одновременных запросов не ограничивает весь буфер; добавлен пример чтения небольшими порциями.", "Сборка инструкции и отдельные проверки пройдены.", "https://github.com/paramiko/paramiko/pull/2710"),
-            ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711")
+            ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711"),
+            ("Обработка изображений в Linux", "Смена формата и размера, обрезка, цвет, водяной знак и удаление метаданных. Доступ к файлам, время и ресурсы ограничены.", "Пройдены 356 локальных проверок, включая два настоящих вызова через Ollama. Проверки GitHub ждут разрешения сопровождающего.", "https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/61")
         ],
         "proposed": "Посмотреть исправление и проверки",
-        "pendingStatus": "На 29 октября 2026 года (UTC) все три предложения открыты и ожидают проверки авторов проектов.",
+        "pendingStatus": "На 30 октября 2026 года (UTC) все четыре предложения открыты и ожидают проверки авторов проектов.",
         "peerTitle": "Независимая проверка чужих изменений",
         "peerIntro": "Исходные предложения принадлежат другим разработчикам. Здесь - мои результаты проверки, воспроизведение ошибок и предложенная поправка.",
         "peerWork": [
@@ -190,10 +208,16 @@ def build(language):
     story.append(PageBreak())
     p(data["workTitle"],"title")
     p(data["workIntro"],"intro")
-    for title,description,url in data["work"]:
+    for index,(title,description,url) in enumerate(data["work"]):
+        if index == 3:
+            story.append(PageBreak())
+            p(data["codeWorkTitle"],"title")
+            p(data["codeWorkIntro"],"intro")
         p(title,"heading")
         p(description)
         link(data["accepted"],url)
+        for label,extra_url in data["workLinks"].get(url,[]):
+            link(label,extra_url)
     p(data["workNote"],"small")
     p(data["reviewPageNote"],"small")
     story.append(PageBreak())
@@ -235,7 +259,7 @@ def build(language):
         canvas.setFillColor(MUTED)
         canvas.setFont("Text",8)
         canvas.drawString(44,24,"Dima Mak / ub3dqy")
-        canvas.drawRightString(width-44,24,str(doc.page)+" / 5")
+        canvas.drawRightString(width-44,24,str(doc.page)+" / 6")
         canvas.restoreState()
     filename = ROOT/("portfolio-"+language+".pdf")
     doc = SimpleDocTemplate(str(filename),pagesize=A4,leftMargin=44,rightMargin=44,topMargin=64,bottomMargin=52,title=data["title"],author="Dima Mak / ub3dqy",subject="Practical technology help portfolio",pageCompression=1)

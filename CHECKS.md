@@ -21,9 +21,9 @@ They cover separate comparison outcomes, empty files, subfolders, letter case, d
 
 The built-in folder example, naming preview, collision warning, request form, language switch and clearing of outdated results were also checked in Edge. The folder-selection dialog itself was not driven during those browser checks.
 
-The accepted contributions linked from the portfolio are three documentation improvements and one Tablib code fix merged after maintainer review on 29 October 2026 (UTC). They are not claims of authorship of those applications or paid client engagements.
+The accepted contributions linked from the portfolio are three documentation improvements and three code fixes. Tablib #715 was merged on 29 October 2026 (UTC). Go-Hybrid #1518 was merged on 30 October after maintainer review, with linked technical feedback. Error Translator #120 was merged on 27 October; its requested clarification #121 was merged on 30 October and belongs to the same contribution. These records describe open-source contributions, with no paid client engagement claimed.
 
-The three technical-contribution examples awaiting review link to open Filament and Paramiko pull requests as of 29 October 2026 (UTC). Their checks and verification notes are linked from each proposal. Tablib #715 is now listed with accepted contributions: it replaces #714, which was closed because its eager imports lost the lazy-loading benefit. The merged fix registers formats on demand and passes the suites on Python 3.14 and 3.15.
+The four technical-contribution examples awaiting review link to open Filament, Paramiko and image-processing pull requests as of 30 October 2026 (UTC). Their checks and verification notes are linked from each proposal. The Linux image-processing tool passed 356 local tests with no skips, including two real Ollama tool calls; its GitHub workflows still require maintainer approval. Tablib #715 is now listed with accepted contributions: it replaces #714, which was closed because its eager imports lost the lazy-loading benefit. The merged fix registers formats on demand and passes the suites on Python 3.14 and 3.15.
 
 The independent reviews link to proposals authored by other contributors. The published reviews include dynamic-column validation, a tested JSON-import correction, and reproductions of missing transcript messages and hidden-map fitting failures. Tablib #663 was closed as a duplicate of #709; the proposed correction has not been accepted. The other three reviews await feedback as of 29 October 2026 (UTC). The Happy checks cover its transcript scanner; the map checks cover the frontend in Edge, without a full WordPress installation.
 
@@ -31,4 +31,4 @@ The independent reviews link to proposals authored by other contributors. The pu
 
 Run build_portfolio.py with Python, ReportLab and the Segoe UI / Georgia fonts installed. README.md and ENGLISH.md link to portfolio-en.pdf; README.ru.md links to portfolio-ru.pdf.
 
-Each PDF has five pages: services, example tools, accepted documentation contributions, technical contributions awaiting review, and independent code reviews with contact details.
+Each PDF has six pages: services, example tools, accepted documentation improvements, accepted code fixes, technical contributions awaiting review, and independent code reviews with contact details. The accepted-code page links to Go-Hybrid maintainer feedback and the Error Translator follow-up. The English and Russian PDFs retain the same case order and acceptance distinctions as their matching README files.
