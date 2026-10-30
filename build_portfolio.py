@@ -48,23 +48,25 @@ DATA = {
         "startTitle": "Try them without installing anything",
         "start": "Download the example ZIP from the portfolio, extract all the files and open index.html. English is the default; the Russian button switches the page. Your files and text are not uploaded.",
         "workTitle": "Accepted documentation improvements",
-        "workIntro": "These three documentation improvements were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
+        "workIntro": "These four documentation contributions were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
         "codeWorkTitle": "Code fixes accepted by maintainers",
         "codeWorkIntro": "These three fixes were merged into their projects. The links include the requested clarification and maintainer feedback.",
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
             ("A less confusing first exercise", "Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
+            ("PETL - documentation links and HTML checks", "Restored nine documentation links in a merged PR. Four local checks confirmed existing HTML table sections; the maintainer reacted positively and closed the display question.", "https://github.com/petl-developers/petl/pull/776"),
             ("Tablib - Python 3.15 compatibility", "Built-in formats register on first use while preserving lazy imports. Merged after maintainer review; checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Go-Hybrid - JSON error handling", "Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
             ("Error Translator - import error hints", "Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
         "workLinks": {
+            "https://github.com/petl-developers/petl/pull/776": [("HTML checks and resolved question", "https://github.com/petl-developers/petl/issues/416#issuecomment-6534560533")],
             "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Maintainer feedback", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
             "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Accepted clarification", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
         },
         "accepted": "View the accepted change",
-        "workNote": "Three documentation improvements and three code fixes. The applications belong to their respective projects.",
+        "workNote": "Four documentation contributions and three code fixes. The PETL display check confirms existing behavior, not a new code fix. The applications belong to their respective projects.",
         "reviewPageNote": "The next page shows four technical contributions awaiting maintainer review.",
         "pendingTitle": "Technical contributions awaiting review",
         "pendingIntro": "Four public proposals with checks and verification notes.",
@@ -115,23 +117,25 @@ DATA = {
         "startTitle": "Попробовать без установки",
         "start": "Скачайте ZIP с примерами, распакуйте все файлы и откройте index.html. По умолчанию включён английский; кнопка «Русский» переводит страницу. Файлы и текст никуда не загружаются.",
         "workTitle": "Принятые улучшения инструкций",
-        "workIntro": "Эти три улучшения инструкций отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
+        "workIntro": "Эти четыре вклада в инструкции отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
         "codeWorkTitle": "Исправления кода, принятые проектами",
         "codeWorkIntro": "Эти три исправления включены в проекты. По ссылкам доступны принятое пояснение и отзыв сопровождающего.",
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
             ("Яснее первые шаги учебной работы", "В Data Engineering Launchpad уточнено, с чего начать, а пример ожидаемого отчёта стал удобнее читать.", "https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19"),
+            ("PETL - ссылки в инструкции и проверки HTML", "Восстановлены девять ссылок; изменение включено в проект. Четыре проверки подтвердили уже работавшую структуру HTML-таблиц. Сопровождающий положительно отреагировал на ответ и закрыл вопрос.", "https://github.com/petl-developers/petl/pull/776"),
             ("Tablib - совместимость с Python 3.15", "Регистрация форматов по первому запросу сохраняет отложенную загрузку. Исправление принято; проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Go-Hybrid - обработка ошибок JSON", "Ошибка преобразования возвращается вызывающей стороне; неверные идентификаторы не меняют выходные данные. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
             ("Error Translator - подсказки при ошибке импорта", "Исправлены обработка отсутствующего модуля и подсказки близких имён. Исправление и запрошенное пояснение включены в проект.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
         "workLinks": {
+            "https://github.com/petl-developers/petl/pull/776": [("Проверки HTML и решённый вопрос", "https://github.com/petl-developers/petl/issues/416#issuecomment-6534560533")],
             "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Отзыв сопровождающего", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
             "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Принятое пояснение", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
         },
         "accepted": "Посмотреть принятое изменение",
-        "workNote": "Три улучшения инструкций и три исправления кода. Сами приложения принадлежат соответствующим проектам.",
+        "workNote": "Четыре вклада в инструкции и три исправления кода. Проверка вывода PETL подтвердила существующее поведение; новый фикс не заявлен. Сами приложения принадлежат соответствующим проектам.",
         "reviewPageNote": "На следующей странице - четыре предложения, ожидающие проверки авторов проектов.",
         "pendingTitle": "Исправления и инструкции на рассмотрении",
         "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
@@ -209,7 +213,7 @@ def build(language):
     p(data["workTitle"],"title")
     p(data["workIntro"],"intro")
     for index,(title,description,url) in enumerate(data["work"]):
-        if index == 3:
+        if index == 4:
             story.append(PageBreak())
             p(data["codeWorkTitle"],"title")
             p(data["codeWorkIntro"],"intro")

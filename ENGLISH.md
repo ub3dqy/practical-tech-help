@@ -49,11 +49,12 @@ These are contributions to existing projects, made through my GitHub account **u
 - **Clearer Windows setup instructions.** Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer. [Accepted change](https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5).
 - **Fewer steps to get the example files.** Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough. [Accepted change](https://github.com/DepressionCenter/ShareR/pull/36).
 - **A less confusing first exercise.** Clarified the starting point and made the expected report easier to read in Data Engineering Launchpad. [Accepted change](https://github.com/DineshDhanoki/data-engineering-launchpad/pull/19).
+- **PETL - documentation links and HTML checks.** Restored nine documentation links in a merged PR. Four local checks confirmed the existing HTML table sections; the maintainer reacted positively and closed the display question. [Accepted documentation](https://github.com/petl-developers/petl/pull/776) · [Checks and resolved question](https://github.com/petl-developers/petl/issues/416#issuecomment-6534560533).
 - **Tablib - Python 3.15 compatibility.** Built-in formats register on first use while preserving lazy imports. The fix was merged after maintainer review; checks passed on Python 3.14 and 3.15. [Accepted fix](https://github.com/jazzband/tablib/pull/715).
 - **Go-Hybrid - JSON error handling.** Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review. [Accepted fix](https://github.com/limitlessprojects/Go-Hybrid/pull/1518) · [Maintainer feedback](https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209).
 - **Error Translator - import error hints.** Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged. [Accepted fix](https://github.com/gourabanandad/error-translator-cli-v2/pull/120) · [Accepted clarification](https://github.com/gourabanandad/error-translator-cli-v2/pull/121).
 
-Three documentation improvements and three code fixes. The applications themselves belong to their respective projects.
+Four documentation contributions and three code fixes. The PETL display result confirms existing behavior; it is not a new code fix. The applications themselves belong to their respective projects.
 
 ## Technical contributions awaiting review
 
