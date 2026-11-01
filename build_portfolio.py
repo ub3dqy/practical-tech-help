@@ -50,7 +50,7 @@ DATA = {
         "workTitle": "Accepted documentation improvements",
         "workIntro": "These four documentation contributions were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
         "codeWorkTitle": "Code fixes accepted by maintainers",
-        "codeWorkIntro": "These three fixes were merged into their projects. The links include the requested clarification and maintainer feedback.",
+        "codeWorkIntro": "These four fixes were merged into their projects. The links include the requested clarification and maintainer feedback.",
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -58,6 +58,7 @@ DATA = {
             ("PETL - documentation links and HTML checks", "Restored nine documentation links in a merged PR. Four local checks confirmed existing HTML table sections; the maintainer reacted positively and closed the display question.", "https://github.com/petl-developers/petl/pull/776"),
             ("Tablib - Python 3.15 compatibility", "Built-in formats register on first use while preserving lazy imports. Merged after maintainer review; checks passed on Python 3.14 and 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Go-Hybrid - JSON error handling", "Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
+            ("Go-Hybrid - Windows and Linux build rules", "Code generation selects files for the target operating system before choosing a package name. The maintainer merged the correction.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - import error hints", "Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
         "workLinks": {
@@ -66,18 +67,18 @@ DATA = {
             "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Accepted clarification", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
         },
         "accepted": "View the accepted change",
-        "workNote": "Four documentation contributions and three code fixes. The PETL display check confirms existing behavior, not a new code fix. The applications belong to their respective projects.",
-        "reviewPageNote": "The next page shows four technical contributions awaiting maintainer review.",
-        "pendingTitle": "Technical contributions awaiting review",
-        "pendingIntro": "Four public proposals with checks and verification notes.",
+        "workNote": "Four documentation contributions and four code fixes. The PETL display check confirms existing behavior, not a new code fix. The applications belong to their respective projects.",
+        "reviewPageNote": "The next page shows four technical submissions and their current status.",
+        "pendingTitle": "Technical contributions and current status",
+        "pendingIntro": "Four submissions with checks and verification notes.",
         "pendingWork": [
             ("Filament - decimal values in JSON", "Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation.", "Linux checks passed; 10 checks requiring databases were skipped.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - SFTP memory guidance", "Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example.", "Documentation build and targeted checks passed.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - an empty SFTP read request", "Prevents an empty readv call from starting a remote prefetch.", "Targeted regression checks passed.", "https://github.com/paramiko/paramiko/pull/2711"),
-            ("Image processing on Linux", "Converts, resizes, crops and adjusts images, with watermarks and metadata removal. File access, time and resources are bounded.", "356 local tests passed, including two real Ollama tool calls. GitHub checks await maintainer approval.", "https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/61")
+            ("Image processing on Linux", "Converts, resizes, crops and adjusts images, with watermarks and metadata removal. File access, time and resources are bounded.", "356 local tests passed, including two real Ollama tool calls. The original review thread is inaccessible; the submitted source is preserved. Acceptance is unconfirmed.", "https://github.com/ub3dqy/ultimate-ai-platform/commit/dd590cf216ef5446e5608c01e3a93fa0cdd9fa1f")
         ],
         "proposed": "View the proposed fix and checks",
-        "pendingStatus": "As of 30 October 2026 (UTC), all four proposals are open and awaiting maintainer review.",
+        "pendingStatus": "As of 1 November 2026 (UTC), the three visible upstream proposals remain open. Review and acceptance of the image-processing submission cannot currently be verified.",
         "peerTitle": "Independent code reviews",
         "peerIntro": "The original proposals belong to other contributors. These are my published findings, checks and proposed correction.",
         "peerWork": [
@@ -119,7 +120,7 @@ DATA = {
         "workTitle": "Принятые улучшения инструкций",
         "workIntro": "Эти четыре вклада в инструкции отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
         "codeWorkTitle": "Исправления кода, принятые проектами",
-        "codeWorkIntro": "Эти три исправления включены в проекты. По ссылкам доступны принятое пояснение и отзыв сопровождающего.",
+        "codeWorkIntro": "Эти четыре исправления включены в проекты. По ссылкам доступны принятое пояснение и отзыв сопровождающего.",
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -127,6 +128,7 @@ DATA = {
             ("PETL - ссылки в инструкции и проверки HTML", "Восстановлены девять ссылок; изменение включено в проект. Четыре проверки подтвердили уже работавшую структуру HTML-таблиц. Сопровождающий положительно отреагировал на ответ и закрыл вопрос.", "https://github.com/petl-developers/petl/pull/776"),
             ("Tablib - совместимость с Python 3.15", "Регистрация форматов по первому запросу сохраняет отложенную загрузку. Исправление принято; проверки пройдены на Python 3.14 и 3.15.", "https://github.com/jazzband/tablib/pull/715"),
             ("Go-Hybrid - обработка ошибок JSON", "Ошибка преобразования возвращается вызывающей стороне; неверные идентификаторы не меняют выходные данные. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
+            ("Go-Hybrid - правила сборки в Windows и Linux", "При создании кода учитывается, для какой системы предназначены файлы. Это устраняет выбор имени пакета из неподходящего файла. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - подсказки при ошибке импорта", "Исправлены обработка отсутствующего модуля и подсказки близких имён. Исправление и запрошенное пояснение включены в проект.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120")
         ],
         "workLinks": {
@@ -135,18 +137,18 @@ DATA = {
             "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Принятое пояснение", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
         },
         "accepted": "Посмотреть принятое изменение",
-        "workNote": "Четыре вклада в инструкции и три исправления кода. Проверка вывода PETL подтвердила существующее поведение; новый фикс не заявлен. Сами приложения принадлежат соответствующим проектам.",
-        "reviewPageNote": "На следующей странице - четыре предложения, ожидающие проверки авторов проектов.",
-        "pendingTitle": "Исправления и инструкции на рассмотрении",
-        "pendingIntro": "Четыре открытых предложения с проверками и описанием результата.",
+        "workNote": "Четыре вклада в инструкции и четыре исправления кода. Проверка вывода PETL подтвердила существующее поведение; новый фикс не заявлен. Сами приложения принадлежат соответствующим проектам.",
+        "reviewPageNote": "На следующей странице - четыре технические работы и их текущий статус.",
+        "pendingTitle": "Технические работы и текущий статус",
+        "pendingIntro": "Четыре работы с проверками и описанием результата.",
         "pendingWork": [
             ("Filament - десятичные числа в JSON", "Устранён сбой при преобразовании чисел; крайние значения сохраняются в короткой точной записи.", "Проверки в Linux пройдены; 10 проверок с отдельными базами данных пропущены.", "https://github.com/galaxy-io/filament/pull/619"),
             ("Paramiko - расход памяти при чтении SFTP", "Объяснено, почему ограничение одновременных запросов не ограничивает весь буфер; добавлен пример чтения небольшими порциями.", "Сборка инструкции и отдельные проверки пройдены.", "https://github.com/paramiko/paramiko/pull/2710"),
             ("Paramiko - пустой запрос чтения SFTP", "Пустой вызов readv больше не запускает предварительное чтение на сервере.", "Проверки исправленного случая пройдены.", "https://github.com/paramiko/paramiko/pull/2711"),
-            ("Обработка изображений в Linux", "Смена формата и размера, обрезка, цвет, водяной знак и удаление метаданных. Доступ к файлам, время и ресурсы ограничены.", "Пройдены 356 локальных проверок, включая два настоящих вызова через Ollama. Проверки GitHub ждут разрешения сопровождающего.", "https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/61")
+            ("Обработка изображений в Linux", "Смена формата и размера, обрезка, цвет, водяной знак и удаление метаданных. Доступ к файлам, время и ресурсы ограничены.", "Пройдены 356 локальных проверок, включая два настоящих вызова через Ollama. Исходное обсуждение недоступно; переданный код сохранён. Приёмка не подтверждена.", "https://github.com/ub3dqy/ultimate-ai-platform/commit/dd590cf216ef5446e5608c01e3a93fa0cdd9fa1f")
         ],
         "proposed": "Посмотреть исправление и проверки",
-        "pendingStatus": "На 30 октября 2026 года (UTC) все четыре предложения открыты и ожидают проверки авторов проектов.",
+        "pendingStatus": "На 1 ноября 2026 года (UTC) три доступных предложения остаются открытыми. Текущий ход проверки и приёмку инструмента обработки изображений подтвердить не удалось.",
         "peerTitle": "Независимая проверка чужих изменений",
         "peerIntro": "Исходные предложения принадлежат другим разработчикам. Здесь - мои результаты проверки, воспроизведение ошибок и предложенная поправка.",
         "peerWork": [
