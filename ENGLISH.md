@@ -1,5 +1,7 @@
 **English** · [Русский](README.ru.md)
 
+**[Paid Python and Go bug fixes](PAID-FIXES.md)**
+
 # Small tools and practical computer help
 
 I'm Dima Mak, also known as ub3dqy. I make small tools for everyday tasks and help work through confusing computer and software problems.
