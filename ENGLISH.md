@@ -2,6 +2,8 @@
 
 **[Paid Python and Go bug fixes](PAID-FIXES.md)**
 
+[Request paid help](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml) - describe the problem, budget and deadline.
+
 # Small tools and practical computer help
 
 I'm Dima Mak, also known as ub3dqy. I make small tools for everyday tasks and help work through confusing computer and software problems.

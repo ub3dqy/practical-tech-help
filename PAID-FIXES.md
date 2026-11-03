@@ -21,9 +21,9 @@ We agree on the scope, fee, deadline and payment method before the fix is submit
 
 ## Describe your task
 
-[Open a paid fix request on GitHub](https://github.com/ub3dqy/practical-tech-help/issues/new?title=Paid%20bug%20fix%20request).
+[Open a paid fix request on GitHub](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml).
 
-Include the repository, steps to reproduce the problem, expected and actual results, and the available budget. A small public example is enough to start.
+The form asks for the repository, expected and actual results, a small example, budget and deadline. If you need a quote, say so in the budget field. Keep passwords, access tokens and private files out of public requests.
 
 **Dima Mak / ub3dqy**
 

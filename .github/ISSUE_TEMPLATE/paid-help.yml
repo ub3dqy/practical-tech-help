@@ -1,0 +1,41 @@
+name: Paid help request
+description: Discuss a small paid fix, tool or software problem.
+title: "[Paid help] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the task below. We agree on the scope, fee, deadline and payment method before work starts.
+
+        This request is public. Do not include passwords, access tokens or private files.
+
+        Dima Mak / ub3dqy
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs fixing or building?
+      description: Explain what you expected, what happened instead and what result you need.
+    validations:
+      required: true
+  - type: textarea
+    id: project
+    attributes:
+      label: Project and environment
+      description: Link the repository if available. Include the relevant software versions and operating system.
+  - type: textarea
+    id: example
+    attributes:
+      label: Small example or steps to reproduce
+      description: Use a public example with sensitive details removed. Mention anything you have already tried.
+  - type: input
+    id: budget
+    attributes:
+      label: Budget and currency
+      description: Give an amount or write "Please quote" if you need an estimate.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Desired deadline
+      description: Include the date and time zone, or leave blank if flexible.

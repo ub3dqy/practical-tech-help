@@ -31,7 +31,7 @@ DATA = {
         "label": "ENGLISH / PORTFOLIO",
         "title": "Small tools and practical computer help",
         "intro": "I'm Dima Mak, also known as ub3dqy. I make small tools for everyday tasks and help work through confusing computer and software problems.",
-        "opening": "Maybe you keep doing the same job by hand. Maybe an app has stopped working and the instructions only make things more confusing. Tell me what you want to get done, and we'll work out a sensible way forward.",
+        "opening": "Need a small Python or Go fix, a tool for working with files, or help with a software problem? Send a small example and your budget. We'll agree on the scope, price, deadline and payment method before work starts.",
         "services": [
             ("01", "Small tools for repetitive work", "Compare folders, prepare file names, check lists or turn a string of small steps into one useful tool.", "You get a tool for the agreed task, a checked example and a short explanation of how to use it."),
             ("02", "Help with a stubborn problem", "An app won't open, a guide skips a step, or an error keeps interrupting something you need to finish.", "You get an explanation of what the evidence shows, practical next steps and a clear account of what still needs checking."),
@@ -94,14 +94,15 @@ DATA = {
         "terms": "We'll agree on what's included, the price, the deadline and the payment method before work starts. I'm registered as an individual entrepreneur. If you need business paperwork, let me know when you describe the task.",
         "reply": "Reply in the conversation where you received this portfolio, or leave a short request on GitHub. Keep personal files and sign-in details out of public posts.",
         "open": "Open the portfolio and example downloads",
-        "request": "Leave a short request",
+        "request": "Request paid help on GitHub",
+        "requestUrl": BASE + "/issues/new?template=paid-help.yml",
         "booking": "Book a small website fix on Kwork (Russian listing)",
     },
     "ru": {
         "label": "ПОРТФОЛИО / РУССКИЙ",
         "title": "Небольшие программы и понятная помощь с компьютером",
         "intro": "Я Dima Mak, в сети - ub3dqy. Делаю небольшие полезные программы и помогаю разобраться с компьютерными проблемами, которые не получается решить с ходу.",
-        "opening": "Может быть, вы постоянно делаете одну и ту же работу вручную. Или программа перестала работать, а инструкция только запутывает. Расскажите, что нужно сделать, - разберёмся, с чего начать.",
+        "opening": "Нужно небольшое исправление в Python или Go, программа для работы с файлами или помощь с ошибкой? Пришлите небольшой пример и бюджет. До начала работы согласуем объём, цену, срок и способ оплаты.",
         "services": [
             ("01", "Программы для повторяющихся задач", "Сравнить папки, подготовить новые имена файлов, проверить списки или собрать несколько ручных действий в один удобный инструмент.", "Вы получите программу под согласованную задачу, проверенный пример и короткое объяснение, как ей пользоваться."),
             ("02", "Помощь с непонятной ошибкой", "Программа не открывается, в инструкции пропущен важный шаг или ошибка мешает закончить дело.", "Вы получите понятное объяснение того, что удалось выяснить, порядок дальнейших действий и список оставшихся вопросов."),
@@ -164,7 +165,8 @@ DATA = {
         "terms": "До начала работы договоримся о задаче, цене, сроке и способе оплаты. Есть статус ИП; оформление можно обсудить вместе с задачей.",
         "reply": "Ответьте в той переписке, где получили портфолио, или оставьте короткий запрос на GitHub. Личные файлы и данные для входа в открытом обращении не размещайте.",
         "open": "Открыть портфолио и скачать примеры",
-        "request": "Оставить короткий запрос",
+        "request": "Запросить платную помощь в GitHub",
+        "requestUrl": BASE + "/issues/new?template=paid-help-ru.yml",
         "booking": "Заказать небольшую доработку сайта на Kwork",
     }
 }
@@ -190,6 +192,7 @@ def build(language):
     p(data["title"],"title")
     p(data["intro"],"intro")
     p(data["opening"])
+    link(data["request"],data["requestUrl"])
     rule()
     for number,title,situation,result in data["services"]:
         p(number+" / "+title,"heading")
@@ -249,7 +252,7 @@ def build(language):
     p(data["contact"])
     p(data["terms"])
     p(data["reply"],"small")
-    link(data["request"],BASE+"/issues/new")
+    link(data["request"],data["requestUrl"])
     link(data["booking"],KWORK_URL)
     def page(canvas,doc):
         width,height = A4

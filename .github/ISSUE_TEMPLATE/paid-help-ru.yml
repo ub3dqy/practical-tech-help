@@ -1,0 +1,41 @@
+name: Запрос на платную помощь
+description: Обсудить небольшое исправление, программу или ошибку.
+title: "[Платная помощь] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опишите задачу ниже. До начала работы согласуем объём, цену, срок и способ оплаты.
+
+        Запрос будет открытым. Не публикуйте пароли, ключи доступа и личные файлы.
+
+        Dima Mak / ub3dqy
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что нужно исправить или сделать?
+      description: Опишите ожидаемый и фактический результат, а также то, что хотите получить.
+    validations:
+      required: true
+  - type: textarea
+    id: project
+    attributes:
+      label: Проект и условия работы
+      description: Добавьте ссылку на проект, если она есть. Укажите версии программ и операционную систему.
+  - type: textarea
+    id: example
+    attributes:
+      label: Небольшой пример или шаги воспроизведения
+      description: Уберите из примера личные данные. Укажите, что уже пробовали.
+  - type: input
+    id: budget
+    attributes:
+      label: Бюджет и валюта
+      description: Укажите сумму или напишите "Нужна оценка стоимости".
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Желаемый срок
+      description: Укажите дату и часовой пояс. Можно оставить пустым, если срок не важен.
