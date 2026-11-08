@@ -1,8 +1,8 @@
 **English** · [Русский](PAID-FIXES.ru.md)
 
-# Paid Python and Go bug fixes
+# Paid bug fixes and small features
 
-I help fix small, clearly defined bugs in existing projects: crashes, data handling errors, import failures and differences between Windows and Linux.
+I help with small, clearly defined bugs and features in existing projects: crashes, data handling errors, import failures, differences between Windows and Linux, and focused Android editor improvements.
 
 Send a small example that shows the problem, what should happen and your budget. I'll check whether I can reproduce and verify it, then we can agree a fixed price.
 
@@ -11,6 +11,17 @@ Send a small example that shows the problem, what should happen and your budget.
 A focused change, tests covering the failure, and a short explanation of how to check the result. Any remaining verification limits are stated in the handover.
 
 We agree on the scope, fee, deadline and payment method before the fix is submitted.
+
+## A recent local example
+
+**Android note editor:** select a typed expression or LaTeX fraction and append its answer. The calculation works offline, keeps the original expression, and can be undone in one step.
+
+| Selected expression | Appended answer |
+| --- | --- |
+| `0.1 + 0.2` | `= 0.3` |
+| `1 / 3` | `≈ 0.333333333333` |
+
+Twenty new tests and checks on an Android tablet emulator (API 36) pass, including undo, reopening a saved note, and rejecting division by zero without changing the note. This is a private prototype. Scope and fee are agreed before a PR is submitted.
 
 ## Public contributions
 
