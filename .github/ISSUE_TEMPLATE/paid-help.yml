@@ -7,6 +7,8 @@ body:
       value: |
         Describe the task below. We agree on the scope, fee, deadline and payment method before work starts.
 
+        Payment is in USDC. We agree on the transfer network before payment.
+
         This request is public. Do not include passwords, access tokens or private files.
 
         Dima Mak / ub3dqy
@@ -30,8 +32,8 @@ body:
   - type: input
     id: budget
     attributes:
-      label: Budget and currency
-      description: Give an amount or write "Please quote" if you need an estimate.
+      label: Budget (USDC)
+      description: Give an amount in USDC or write "Please quote" if you need an estimate.
     validations:
       required: true
   - type: input

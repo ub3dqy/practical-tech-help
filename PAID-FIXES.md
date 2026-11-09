@@ -10,7 +10,7 @@ Send a small example that shows the problem, what should happen and your budget.
 
 A focused change, tests covering the failure, and a short explanation of how to check the result. Any remaining verification limits are stated in the handover.
 
-We agree on the scope, fee, deadline and payment method before the fix is submitted.
+Payment is in USDC. We agree on the network, scope, fee and deadline before the fix is submitted.
 
 ## A recent local example
 
@@ -33,11 +33,11 @@ Twenty new tests and checks on an Android tablet emulator (API 36) pass, includi
 
 ## Prepared fix example
 
-**Fyne / Go:** `IntToFloat.Set` can silently discard a source read error. A small fix and nine regression cases are prepared against [this upstream revision](https://github.com/fyne-io/fyne/tree/3cc4916eaea93c77ce52c6eab6ea921dab5aae6e), checked on 7 November 2026.
+**html2text / Python:** plain text starting with `*`, `>` or `#` can become an unintended Markdown list, quote or heading. A private fix for [the reported issue](https://github.com/Alir3z4/html2text/issues/467) is ready against [this upstream revision](https://github.com/Alir3z4/html2text/tree/5cf85510a2498546d5b48ad1bf7d75b146aac591), checked on 9 November 2026.
 
-All 85 tests in the binding package pass. A full Windows race run still has 13 dialog/widget failures; the same 13 also occur on unchanged upstream code.
+The full 232-test suite passes on Windows with Python 3.11 and 3.13, including 36 new cases. Twenty additional rendering checks pass. This does not cover the project's full CI matrix.
 
-**Quote: 20 USDC on Base.** The patch has not been submitted upstream or accepted. Scope and payment are agreed before handover.
+**Quote: 35 USDC.** The patch has not been submitted upstream or accepted. Scope and payment are agreed before handover.
 
 ## Describe your task
 
