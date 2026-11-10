@@ -31,13 +31,19 @@ Twenty new tests and checks on an Android tablet emulator (API 36) pass, includi
 - **PETL:** reviewed uncached merge behavior; the author accepted the finding and corrected it. [Review](https://github.com/petl-developers/petl/pull/774#pullrequestreview-5725109947) · [Author's reply](https://github.com/petl-developers/petl/pull/774#discussion_r4434273917).
 - **Viridis:** identified two mismatches between paper statements and formal results; the maintainer confirmed both. [Positive-angle condition](https://github.com/jdhart81/viridis-canon/issues/145#issuecomment-6711535656) · [Probability-event direction](https://github.com/jdhart81/viridis-canon/issues/146#issuecomment-6711530033).
 
-## Prepared fix example
+## Prepared fixes
 
 **html2text / Python:** plain text starting with `*`, `>` or `#` can become an unintended Markdown list, quote or heading. A private fix for [the reported issue](https://github.com/Alir3z4/html2text/issues/467) is ready against [this upstream revision](https://github.com/Alir3z4/html2text/tree/5cf85510a2498546d5b48ad1bf7d75b146aac591), checked on 9 November 2026.
 
 The full 232-test suite passes on Windows with Python 3.11 and 3.13, including 36 new cases. Twenty additional rendering checks pass. This does not cover the project's full CI matrix.
 
 **Quote: 35 USDC.** The patch has not been submitted upstream or accepted. Scope and payment are agreed before handover.
+
+**Unidiff / Python:** Windows-style (CRLF) diff headers can leave `\r` in file paths and skip Git file modes and binary-patch markers. A private fix for [the reported issue](https://github.com/matiasb/python-unidiff/issues/154) is ready against [this upstream revision](https://github.com/matiasb/python-unidiff/tree/926d4ce81da020b19e985796fce389cb278f16a1), checked on 10 November 2026. The changed files' text, including embedded carriage returns and CRLF line endings, is preserved.
+
+All 82 tests pass on each of Python 3.9–3.13 on Linux and 3.9–3.14 on Windows, including nine new regression test methods. Type checks also pass.
+
+**Quote: 25 USDC on Base.** The code has not been submitted upstream or accepted. Scope and payment are agreed before handover.
 
 ## Describe your task
 
