@@ -30,6 +30,7 @@
 - **Go-Hybrid:** при выборе имени пакета учитываются правила сборки для целевой системы. [Исправление принято](https://github.com/limitlessprojects/Go-Hybrid/pull/2400).
 - **PETL:** проверено поведение объединения данных без кэша; автор признал замечание и внёс поправку. [Проверка](https://github.com/petl-developers/petl/pull/774#pullrequestreview-5725109947) · [Ответ автора](https://github.com/petl-developers/petl/pull/774#discussion_r4434273917).
 - **Viridis:** найдены два расхождения между формулировками в статьях и формальными результатами; автор подтвердил оба. [Условие положительного угла](https://github.com/jdhart81/viridis-canon/issues/145#issuecomment-6711535656) · [Направление события вероятности](https://github.com/jdhart81/viridis-canon/issues/146#issuecomment-6711530033).
+- **xlsx2csv:** сообщил об ошибке выбора листа при пакетном преобразовании. Автор проекта исправил её; проверки на Windows и Linux прошли, включая вложенные папки и разный порядок листов в книгах. [Сообщение](https://github.com/dilshod/xlsx2csv/issues/320) · [Исправление автора](https://github.com/dilshod/xlsx2csv/commit/4e2b082521c27cfc33a11eb6e77378b6f0b73898) · [Проверка](https://github.com/dilshod/xlsx2csv/issues/320#issuecomment-6768777082).
 
 ## Готовые исправления
 

@@ -30,6 +30,7 @@ Twenty new tests and checks on an Android tablet emulator (API 36) pass, includi
 - **Go-Hybrid:** applied target-platform build rules before choosing a package name. [Merged fix](https://github.com/limitlessprojects/Go-Hybrid/pull/2400).
 - **PETL:** reviewed uncached merge behavior; the author accepted the finding and corrected it. [Review](https://github.com/petl-developers/petl/pull/774#pullrequestreview-5725109947) · [Author's reply](https://github.com/petl-developers/petl/pull/774#discussion_r4434273917).
 - **Viridis:** identified two mismatches between paper statements and formal results; the maintainer confirmed both. [Positive-angle condition](https://github.com/jdhart81/viridis-canon/issues/145#issuecomment-6711535656) · [Probability-event direction](https://github.com/jdhart81/viridis-canon/issues/146#issuecomment-6711530033).
+- **xlsx2csv:** reported that named-sheet selection was ignored during batch conversion. The maintainer fixed it; checks passed on Windows and Linux, including nested folders and different worksheet orders. [Report](https://github.com/dilshod/xlsx2csv/issues/320) · [Maintainer's fix](https://github.com/dilshod/xlsx2csv/commit/4e2b082521c27cfc33a11eb6e77378b6f0b73898) · [Verification](https://github.com/dilshod/xlsx2csv/issues/320#issuecomment-6768777082).
 
 ## Prepared fixes
 
