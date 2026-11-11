@@ -12,6 +12,14 @@ An agent can sort incoming requests, draft replies or prepare reports. We agree 
 
 Tell me what the agent should do, where it gets its information and what result you expect. I can quote a price and timeline once the scope is clear.
 
+## Offline document OCR on Windows
+
+I set up offline OCR for printed scans and compare the output with reference text. You receive Windows setup instructions and a report with character error rates by language and processing time per page.
+
+In a local RapidOCR test on generated A4 pages, the Russian and English samples matched the reference text. The Kazakh page had four character substitutions in 214 characters. [Test notes](https://github.com/RapidAI/RapidOCR/discussions/774#discussioncomment-19552795)
+
+For a quote, include the scan format, languages and the result you need.
+
 ## Bug fixes and small features
 
 I help with small, clearly defined bugs and features in existing projects: crashes, data handling errors, import failures, differences between Windows and Linux, and focused Android editor improvements.
