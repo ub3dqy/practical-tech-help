@@ -31,11 +31,12 @@ DATA = {
         "label": "ENGLISH / PORTFOLIO",
         "title": "Small tools and practical computer help",
         "intro": "I'm Dima Mak, also known as ub3dqy. I make small tools for everyday tasks and help work through confusing computer and software problems.",
-        "opening": "Need a small Python or Go fix, a tool for working with files, or help with a software problem? Send a small example and your budget. We'll agree on the scope, price, deadline and payment method before work starts.",
+        "opening": "Need an AI agent, a small Python or Go fix, or a tool for working with files? Send a short description and your budget. We'll agree on the scope, price, deadline and payment method before work starts.",
         "services": [
-            ("01", "Small tools for repetitive work", "Compare folders, prepare file names, check lists or turn a string of small steps into one useful tool.", "You get a tool for the agreed task, a checked example and a short explanation of how to use it."),
-            ("02", "Help with a stubborn problem", "An app won't open, a guide skips a step, or an error keeps interrupting something you need to finish.", "You get an explanation of what the evidence shows, practical next steps and a clear account of what still needs checking."),
-            ("03", "Everyday computer help", "Photos and documents, keeping track of copies, choosing the right folder or following an installation guide.", "You get clear steps for the task in front of you. If a change could affect your files, we agree what to change and what to keep first.")
+            ("01", "AI agent development and integration", "Build, configure or improve an agent that sorts requests, drafts replies or prepares reports.", "I connect the agreed tools and data, check the workflow on examples and explain how to run it. We agree which actions need approval."),
+            ("02", "Small tools for repetitive work", "Compare folders, prepare file names, check lists or turn a string of small steps into one useful tool.", "You get a tool for the agreed task, a checked example and a short explanation of how to use it."),
+            ("03", "Help with a stubborn problem", "An app won't open, a guide skips a step, or an error keeps interrupting something you need to finish.", "You get an explanation of what the evidence shows, practical next steps and a clear account of what still needs checking."),
+            ("04", "Everyday computer help", "Photos and documents, keeping track of copies, choosing the right folder or following an installation guide.", "You get clear steps for the task in front of you. If a change could affect your files, we agree what to change and what to keep first.")
         ],
         "page1note": "The next page shows three working examples. You can download them and try them on your own computer.",
         "examplesTitle": "Three examples you can try",
@@ -102,11 +103,12 @@ DATA = {
         "label": "ПОРТФОЛИО / РУССКИЙ",
         "title": "Небольшие программы и понятная помощь с компьютером",
         "intro": "Я Dima Mak, в сети - ub3dqy. Делаю небольшие полезные программы и помогаю разобраться с компьютерными проблемами, которые не получается решить с ходу.",
-        "opening": "Нужно небольшое исправление в Python или Go, программа для работы с файлами или помощь с ошибкой? Пришлите небольшой пример и бюджет. До начала работы согласуем объём, цену, срок и способ оплаты.",
+        "opening": "Нужен ИИ-агент, доработка на Python или Go либо программа для работы с файлами? Пришлите короткое описание задачи и бюджет. До начала работы согласуем объём, цену, срок и способ оплаты.",
         "services": [
-            ("01", "Программы для повторяющихся задач", "Сравнить папки, подготовить новые имена файлов, проверить списки или собрать несколько ручных действий в один удобный инструмент.", "Вы получите программу под согласованную задачу, проверенный пример и короткое объяснение, как ей пользоваться."),
-            ("02", "Помощь с непонятной ошибкой", "Программа не открывается, в инструкции пропущен важный шаг или ошибка мешает закончить дело.", "Вы получите понятное объяснение того, что удалось выяснить, порядок дальнейших действий и список оставшихся вопросов."),
-            ("03", "Повседневные дела на компьютере", "Фотографии и документы, проверка копий, выбор нужной папки или установка по запутанной инструкции.", "Вы получите понятные шаги для своей задачи. Если изменения могут затронуть файлы, сначала договоримся, что меняем и что сохраняем.")
+            ("01", "Разработка и внедрение ИИ-агентов", "Создам или доработаю агента для разбора заявок, подготовки ответов и отчётов.", "Подключу согласованные данные и сервисы, проверю работу на примерах и объясню, как запустить агента. Согласуем, какие действия требуют подтверждения."),
+            ("02", "Программы для повторяющихся задач", "Сравнить папки, подготовить новые имена файлов, проверить списки или собрать несколько ручных действий в один удобный инструмент.", "Вы получите программу под согласованную задачу, проверенный пример и короткое объяснение, как ей пользоваться."),
+            ("03", "Помощь с непонятной ошибкой", "Программа не открывается, в инструкции пропущен важный шаг или ошибка мешает закончить дело.", "Вы получите понятное объяснение того, что удалось выяснить, порядок дальнейших действий и список оставшихся вопросов."),
+            ("04", "Повседневные дела на компьютере", "Фотографии и документы, проверка копий, выбор нужной папки или установка по запутанной инструкции.", "Вы получите понятные шаги для своей задачи. Если изменения могут затронуть файлы, сначала договоримся, что меняем и что сохраняем.")
         ],
         "page1note": "На следующей странице - три работающих примера. Их можно скачать и попробовать на своём компьютере.",
         "examplesTitle": "Три примера, которые можно попробовать",

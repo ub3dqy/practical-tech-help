@@ -1,8 +1,8 @@
 **English** · [Русский](README.ru.md)
 
-**[Paid Python and Go bug fixes](PAID-FIXES.md)**
+**[AI agent development and integration](PAID-FIXES.md#ai-agent-development-and-integration)** · **[Paid Python and Go bug fixes](PAID-FIXES.md#bug-fixes-and-small-features)**
 
-[Request paid help](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml) - describe the problem, budget and deadline.
+[Request paid help](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml) - describe the task, budget and deadline.
 
 # Small tools and practical computer help
 

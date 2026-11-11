@@ -1,16 +1,26 @@
 **English** · [Русский](PAID-FIXES.ru.md)
 
-# Paid bug fixes and small features
+# Paid technical services
+
+Payment is in USDC. We agree on the transfer network, scope, price and deadline before work starts.
+
+## AI agent development and integration
+
+I build, configure and deploy AI agents for specific workflows. I can create a new agent or improve one you already use, then connect it to your documents, spreadsheets, GitHub or other tools you approve.
+
+An agent can sort incoming requests, draft replies or prepare reports. We agree on what it can access and which actions need your approval. I check it on agreed examples and hand over instructions for running and updating it.
+
+Tell me what the agent should do, where it gets its information and what result you expect. I can quote a price and timeline once the scope is clear.
+
+## Bug fixes and small features
 
 I help with small, clearly defined bugs and features in existing projects: crashes, data handling errors, import failures, differences between Windows and Linux, and focused Android editor improvements.
 
 Send a small example that shows the problem, what should happen and your budget. I'll check whether I can reproduce and verify it, then we can agree a fixed price.
 
-## What you receive
+### What you receive
 
 A focused change, tests covering the failure, and a short explanation of how to check the result. Any remaining verification limits are stated in the handover.
-
-Payment is in USDC. We agree on the network, scope, fee and deadline before the fix is submitted.
 
 ## A recent local example
 
@@ -48,9 +58,9 @@ All 82 tests pass on each of Python 3.9–3.13 on Linux and 3.9–3.14 on Window
 
 ## Describe your task
 
-[Open a paid fix request on GitHub](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml).
+[Open a paid help request on GitHub](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help.yml).
 
-The form asks for the repository, expected and actual results, a small example, budget and deadline. If you need a quote, say so in the budget field. Keep passwords, access tokens and private files out of public requests.
+Describe the task, the expected result, your budget and deadline. Add a project link or a small example if available. If you need a quote, say so in the budget field. Keep passwords, access tokens and private files out of public requests.
 
 **Dima Mak / ub3dqy**
 

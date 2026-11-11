@@ -1,5 +1,5 @@
 name: Paid help request
-description: Discuss a small paid fix, tool or software problem.
+description: Request an AI agent, a small tool or a software fix.
 title: "[Paid help] "
 body:
   - type: markdown
@@ -16,19 +16,19 @@ body:
     id: problem
     attributes:
       label: What needs fixing or building?
-      description: Explain what you expected, what happened instead and what result you need.
+      description: Describe the result you need. For an AI agent, say what should start it and what it should do. For a bug, say what happened and what you expected.
     validations:
       required: true
   - type: textarea
     id: project
     attributes:
       label: Project and environment
-      description: Link the repository if available. Include the relevant software versions and operating system.
+      description: Link the repository if available. List the tools or data the agent would use, or the software versions and operating system for a bug.
   - type: textarea
     id: example
     attributes:
       label: Small example or steps to reproduce
-      description: Use a public example with sensitive details removed. Mention anything you have already tried.
+      description: Share a public example with sensitive details removed. For a bug, mention what you have tried. For an agent, mention which actions need your approval.
   - type: input
     id: budget
     attributes:

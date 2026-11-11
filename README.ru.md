@@ -1,8 +1,8 @@
 [English](README.md) · **Русский**
 
-**[Платные исправления Python и Go](PAID-FIXES.ru.md)**
+**[Разработка и внедрение ИИ-агентов](PAID-FIXES.ru.md#разработка-и-внедрение-ии-агентов)** · **[Платные исправления Python и Go](PAID-FIXES.ru.md#исправления-ошибок-и-небольшие-доработки)**
 
-[Запросить платную помощь](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help-ru.yml) - опишите проблему, бюджет и срок.
+[Запросить платную помощь](https://github.com/ub3dqy/practical-tech-help/issues/new?template=paid-help-ru.yml) - опишите задачу, бюджет и срок.
 
 # Небольшие программы и понятная помощь с компьютером
 
