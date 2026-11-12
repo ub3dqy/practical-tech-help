@@ -58,19 +58,19 @@ These are contributions to existing projects, made through my GitHub account **u
 - **Go-Hybrid - JSON error handling.** Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review. [Accepted fix](https://github.com/limitlessprojects/Go-Hybrid/pull/1518) · [Maintainer feedback](https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209).
 - **Go-Hybrid - Windows and Linux build rules.** Code generation selects files for the target operating system before choosing a package name. The maintainer merged the correction. [Accepted fix](https://github.com/limitlessprojects/Go-Hybrid/pull/2400).
 - **Error Translator - import error hints.** Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged. [Accepted fix](https://github.com/gourabanandad/error-translator-cli-v2/pull/120) · [Accepted clarification](https://github.com/gourabanandad/error-translator-cli-v2/pull/121).
+- **Filament - decimal values in JSON.** The fix prevents a crash when formatting decimals with a negative scale and keeps extreme values exact in a short form. [Accepted fix](https://github.com/galaxy-io/filament/pull/619).
 
-Four documentation contributions and four code fixes. The PETL display result confirms existing behavior; it is not a new code fix. The applications themselves belong to their respective projects.
+Four documentation contributions and five code fixes. The PETL display result confirms existing behavior; it is not a new code fix. The applications themselves belong to their respective projects.
 
 ## Technical contributions and current status
 
-These four submissions include checks and verification notes:
+These three submissions include checks and verification notes:
 
-- **Filament - decimal values in JSON.** Fixes negative-scale decimal formatting and keeps extreme values in a short, exact representation. [Proposed fix](https://github.com/galaxy-io/filament/pull/619).
 - **Paramiko - SFTP memory guidance.** Explains why limiting concurrent requests does not limit all buffered data, with a bounded-reading example. [Proposed documentation](https://github.com/paramiko/paramiko/pull/2710).
 - **Paramiko - an empty SFTP read request.** Prevents an empty `readv` call from starting a remote prefetch. [Proposed fix](https://github.com/paramiko/paramiko/pull/2711).
 - **Image processing on Linux.** Converts, resizes, crops and adjusts images, with watermarks and metadata removal. File access, time and resources are bounded. All 356 local tests passed, including two real Ollama tool calls. The original review thread is now inaccessible; the submitted source is preserved in a public fork. Acceptance is unconfirmed. [Submitted source](https://github.com/ub3dqy/ultimate-ai-platform/commit/dd590cf216ef5446e5608c01e3a93fa0cdd9fa1f).
 
-The three visible upstream proposals remain open as of 1 November 2026 (UTC). Review and acceptance of the image-processing submission cannot currently be verified.
+Both Paramiko proposals were open on 12 November 2026 (UTC). Review and acceptance of the image-processing submission cannot currently be verified.
 
 ## Independent code reviews
 
