@@ -12,6 +12,18 @@ An agent can sort incoming requests, draft replies or prepare reports. We agree 
 
 Tell me what the agent should do, where it gets its information and what result you expect. I can quote a price and timeline once the scope is clear.
 
+### Try a request-triage agent
+
+This example reads a sample support request and uses a local Ollama model to summarize it and suggest a category. It selects a reply from a set of templates and prints the draft for review.
+
+With Python 3.9+ and Ollama running on this computer with `qwen3:4b` installed, run this from the repository folder.
+
+~~~text
+python -X utf8 examples/agent-intake/triage.py examples/agent-intake/sample.txt
+~~~
+
+The sample about a missing supplier column was classified as a technical request. The draft asks which version of the app the customer uses. Check the category, summary and draft before using them. [Example source](examples/agent-intake/triage.py) · [Sample request](examples/agent-intake/sample.txt)
+
 ## Offline document OCR on Windows
 
 I set up offline OCR for printed scans and compare the output with reference text. You receive Windows setup instructions and a report with character error rates by language and processing time per page.

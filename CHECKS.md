@@ -27,6 +27,10 @@ The three other technical contributions include two Paramiko proposals and the L
 
 The independent reviews link to proposals authored by other contributors. The published reviews include dynamic-column validation, a tested JSON-import correction, and reproductions of missing transcript messages and hidden-map fitting failures. Tablib #663 was closed as a duplicate of #709; the proposed correction has not been accepted. The other three reviews await feedback as of 29 October 2026 (UTC). The Happy checks cover its transcript scanner; the map checks cover the frontend in Edge, without a full WordPress installation.
 
+## Check the local request-triage demo
+
+Run `python -X utf8 -m unittest discover -s examples/agent-intake` to check response validation, the local-only request and failure handling. These tests use a simulated Ollama response. The [service page](PAID-FIXES.md#try-a-request-triage-agent) shows how to try the real model.
+
 ## Rebuild the PDF versions
 
 Run build_portfolio.py with Python, ReportLab and the Segoe UI / Georgia fonts installed. README.md and ENGLISH.md link to portfolio-en.pdf; README.ru.md links to portfolio-ru.pdf.

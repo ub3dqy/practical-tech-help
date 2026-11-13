@@ -1,0 +1,1 @@
+Hello, the CSV import finishes, but the supplier column is empty in the report. The same file showed suppliers last week. The other columns still appear.
