@@ -2,7 +2,7 @@
 
 # Paid technical services
 
-Payment is in USDC. We agree on the transfer network, scope, price and deadline before work starts.
+Before work starts, we agree on the scope, price, deadline and payment method. For crypto payments, we agree on the currency and network. Clients in Russia can also pay by SBP.
 
 ## AI agent development and integration
 
