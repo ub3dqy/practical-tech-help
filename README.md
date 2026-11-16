@@ -59,9 +59,10 @@ These are contributions to existing projects, made through my GitHub account **u
 - **Go-Hybrid - Windows and Linux build rules.** Code generation selects files for the target operating system before choosing a package name. The maintainer merged the correction. [Accepted fix](https://github.com/limitlessprojects/Go-Hybrid/pull/2400).
 - **Error Translator - import error hints.** Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged. [Accepted fix](https://github.com/gourabanandad/error-translator-cli-v2/pull/120) · [Accepted clarification](https://github.com/gourabanandad/error-translator-cli-v2/pull/121).
 - **Filament - decimal values in JSON.** The fix prevents a crash when formatting decimals with a negative scale and keeps extreme values exact in a short form. [Accepted fix](https://github.com/galaxy-io/filament/pull/619).
+- **Filament - Parquet exports.** Groups small writes into Parquet row groups and flushes by row count or byte size. [Accepted fix](https://github.com/galaxy-io/filament/pull/623).
 - **FastDepends - avoid empty task groups.** Keeps custom fields in order without creating a task group when nothing needs to run in parallel. [Accepted fix](https://github.com/Lancetnik/FastDepends/pull/313) · [Maintainer review](https://github.com/Lancetnik/FastDepends/pull/313#pullrequestreview-5910947361).
 
-Four documentation contributions and six code fixes. The PETL display result confirms existing behavior; it is not a new code fix. The applications themselves belong to their respective projects.
+Four documentation contributions and seven code fixes. The PETL display result confirms existing behavior; it is not a new code fix. The applications themselves belong to their respective projects.
 
 ## Technical contributions and current status
 

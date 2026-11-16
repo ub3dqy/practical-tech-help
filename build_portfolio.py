@@ -51,7 +51,7 @@ DATA = {
         "workTitle": "Accepted documentation improvements",
         "workIntro": "These four documentation contributions were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
         "codeWorkTitle": "Code fixes accepted by maintainers",
-        "codeWorkIntro": "These six fixes were merged into their projects.",
+        "codeWorkIntro": "These seven fixes were merged into their projects.",
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -62,6 +62,7 @@ DATA = {
             ("Go-Hybrid - Windows and Linux build rules", "Code generation selects files for the target operating system before choosing a package name. The maintainer merged the correction.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - import error hints", "Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120"),
             ("Filament - decimal values in JSON", "The fix prevents a crash when formatting decimals with a negative scale and keeps extreme values exact in a short form.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("Filament - Parquet exports", "Groups small writes into Parquet row groups and flushes by row count or byte size.", "https://github.com/galaxy-io/filament/pull/623"),
             ("FastDepends - avoid empty task groups", "Keeps custom fields in order without creating a task group when nothing needs to run in parallel.", "https://github.com/Lancetnik/FastDepends/pull/313")
         ],
         "workLinks": {
@@ -125,7 +126,7 @@ DATA = {
         "workTitle": "Принятые улучшения инструкций",
         "workIntro": "Эти четыре вклада в инструкции отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
         "codeWorkTitle": "Принятые исправления кода",
-        "codeWorkIntro": "Эти шесть исправлений включены в проекты.",
+        "codeWorkIntro": "Эти семь исправлений включены в проекты.",
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -136,6 +137,7 @@ DATA = {
             ("Go-Hybrid - правила сборки в Windows и Linux", "При создании кода учитывается, для какой системы предназначены файлы. Это устраняет выбор имени пакета из неподходящего файла. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - подсказки при ошибке импорта", "Исправлены обработка отсутствующего модуля и подсказки близких имён. Исправление и запрошенное пояснение включены в проект.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120"),
             ("Filament - десятичные числа в JSON", "Исправлен сбой при выводе десятичных чисел с отрицательным масштабом. Крайние значения сохраняются в короткой точной записи.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("Filament - выгрузка в Parquet", "Мелкие порции данных объединяются в группы Parquet. Запись выполняется при достижении порога по числу строк или объёму.", "https://github.com/galaxy-io/filament/pull/623"),
             ("FastDepends - последовательная обработка полей", "Поля обрабатываются по порядку без создания пустой группы задач.", "https://github.com/Lancetnik/FastDepends/pull/313")
         ],
         "workLinks": {
@@ -190,9 +192,12 @@ def build(language):
     story = []
     def p(text,kind="body"):
         story.append(Paragraph(escape(text),style[kind]))
-    def link(label,url):
-        safe_url = escape(url,quote=True)
-        story.append(Paragraph('<link href="'+safe_url+'" color="#146452"><u>'+escape(label)+'</u></link>',style["small"]))
+    def link(label, url, related_links=()):
+        anchors = []
+        for caption, target in [(label, url), *related_links]:
+            safe_url = escape(target, quote=True)
+            anchors.append(f'<link href="{safe_url}" color="#146452"><u>{escape(caption)}</u></link>')
+        story.append(Paragraph(" · ".join(anchors), style["small"]))
     def rule():
         story.extend([Spacer(1,5),HRFlowable(width="100%",thickness=.6,color=LINE),Spacer(1,12)])
     p(data["title"],"title")
@@ -225,15 +230,13 @@ def build(language):
     p(data["workIntro"],"intro")
     for index,(title,description,url) in enumerate(data["work"]):
         if index == 4:
+            p(data["workNote"], "small")
             story.append(PageBreak())
             p(data["codeWorkTitle"],"title")
             p(data["codeWorkIntro"],"intro")
         p(title,"heading")
         p(description)
-        link(data["accepted"],url)
-        for label,extra_url in data["workLinks"].get(url,[]):
-            link(label,extra_url)
-    p(data["workNote"],"small")
+        link(data["accepted"], url, data["workLinks"].get(url, ()))
     p(data["reviewPageNote"],"small")
     story.append(PageBreak())
     p(data["pendingTitle"],"title")
