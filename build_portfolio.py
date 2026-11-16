@@ -51,7 +51,7 @@ DATA = {
         "workTitle": "Accepted documentation improvements",
         "workIntro": "These four documentation contributions were made through my GitHub account, ub3dqy, and accepted by the project maintainers.",
         "codeWorkTitle": "Code fixes accepted by maintainers",
-        "codeWorkIntro": "These five fixes were merged into their projects. The links include the requested clarification and maintainer feedback.",
+        "codeWorkIntro": "These six fixes were merged into their projects.",
         "work": [
             ("Clearer Windows setup", "Explained how to choose a local folder and distinguish it from a OneDrive folder in Screenshot Organizer.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Fewer steps to get the example files", "Replaced two file-page links with direct file links and explained how to save them in the ShareR walkthrough.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -61,15 +61,17 @@ DATA = {
             ("Go-Hybrid - JSON error handling", "Returns serialization failures to the caller and preserves output on invalid handles. The fix was merged after maintainer review.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
             ("Go-Hybrid - Windows and Linux build rules", "Code generation selects files for the target operating system before choosing a package name. The maintainer merged the correction.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - import error hints", "Corrected missing-module handling and close-name suggestions. The fix and requested clarification were merged.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120"),
-            ("Filament - decimal values in JSON", "The fix prevents a crash when formatting decimals with a negative scale and keeps extreme values exact in a short form.", "https://github.com/galaxy-io/filament/pull/619")
+            ("Filament - decimal values in JSON", "The fix prevents a crash when formatting decimals with a negative scale and keeps extreme values exact in a short form.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("FastDepends - avoid empty task groups", "Keeps custom fields in order without creating a task group when nothing needs to run in parallel.", "https://github.com/Lancetnik/FastDepends/pull/313")
         ],
         "workLinks": {
             "https://github.com/petl-developers/petl/pull/776": [("HTML checks and resolved question", "https://github.com/petl-developers/petl/issues/416#issuecomment-6534560533")],
             "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Maintainer feedback", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
-            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Accepted clarification", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
+            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Accepted clarification", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")],
+            "https://github.com/Lancetnik/FastDepends/pull/313": [("FastDepends maintainer review", "https://github.com/Lancetnik/FastDepends/pull/313#pullrequestreview-5910947361")]
         },
         "accepted": "View the accepted change",
-        "workNote": "Four documentation contributions and five code fixes. The PETL display check confirms existing behavior, not a new code fix. The applications belong to their respective projects.",
+        "workNote": "The PETL display check confirmed existing HTML behavior.",
         "reviewPageNote": "The next page shows three technical submissions and their current status.",
         "pendingTitle": "Technical contributions and current status",
         "pendingIntro": "Three submissions with checks and verification notes.",
@@ -122,8 +124,8 @@ DATA = {
         "start": "Скачайте ZIP с примерами, распакуйте все файлы и откройте index.html. По умолчанию включён английский; кнопка «Русский» переводит страницу. Файлы и текст никуда не загружаются.",
         "workTitle": "Принятые улучшения инструкций",
         "workIntro": "Эти четыре вклада в инструкции отправлены через мой аккаунт GitHub ub3dqy и приняты авторами проектов.",
-        "codeWorkTitle": "Исправления кода, принятые проектами",
-        "codeWorkIntro": "Эти пять исправлений включены в проекты. По ссылкам доступны принятое пояснение и отзыв сопровождающего.",
+        "codeWorkTitle": "Принятые исправления кода",
+        "codeWorkIntro": "Эти шесть исправлений включены в проекты.",
         "work": [
             ("Понятнее установка в Windows", "В инструкции Screenshot Organizer объяснено, как выбрать локальную папку и отличить её от папки OneDrive.", "https://github.com/Iqranawaz-debug/Screenshot_Organizer/pull/5"),
             ("Проще скачать файлы примера", "В учебной инструкции ShareR две ссылки на страницы заменены прямыми ссылками на файлы и добавлена подсказка по сохранению.", "https://github.com/DepressionCenter/ShareR/pull/36"),
@@ -133,15 +135,17 @@ DATA = {
             ("Go-Hybrid - обработка ошибок JSON", "Ошибка преобразования возвращается вызывающей стороне; неверные идентификаторы не меняют выходные данные. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518"),
             ("Go-Hybrid - правила сборки в Windows и Linux", "При создании кода учитывается, для какой системы предназначены файлы. Это устраняет выбор имени пакета из неподходящего файла. Исправление принято сопровождающим.", "https://github.com/limitlessprojects/Go-Hybrid/pull/2400"),
             ("Error Translator - подсказки при ошибке импорта", "Исправлены обработка отсутствующего модуля и подсказки близких имён. Исправление и запрошенное пояснение включены в проект.", "https://github.com/gourabanandad/error-translator-cli-v2/pull/120"),
-            ("Filament - десятичные числа в JSON", "Исправлен сбой при выводе десятичных чисел с отрицательным масштабом. Крайние значения сохраняются в короткой точной записи.", "https://github.com/galaxy-io/filament/pull/619")
+            ("Filament - десятичные числа в JSON", "Исправлен сбой при выводе десятичных чисел с отрицательным масштабом. Крайние значения сохраняются в короткой точной записи.", "https://github.com/galaxy-io/filament/pull/619"),
+            ("FastDepends - последовательная обработка полей", "Поля обрабатываются по порядку без создания пустой группы задач.", "https://github.com/Lancetnik/FastDepends/pull/313")
         ],
         "workLinks": {
             "https://github.com/petl-developers/petl/pull/776": [("Проверки HTML и решённый вопрос", "https://github.com/petl-developers/petl/issues/416#issuecomment-6534560533")],
             "https://github.com/limitlessprojects/Go-Hybrid/pull/1518": [("Отзыв сопровождающего", "https://github.com/limitlessprojects/Go-Hybrid/pull/1518#issuecomment-6526341209")],
-            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Принятое пояснение", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")]
+            "https://github.com/gourabanandad/error-translator-cli-v2/pull/120": [("Принятое пояснение", "https://github.com/gourabanandad/error-translator-cli-v2/pull/121")],
+            "https://github.com/Lancetnik/FastDepends/pull/313": [("Отзыв сопровождающего FastDepends", "https://github.com/Lancetnik/FastDepends/pull/313#pullrequestreview-5910947361")]
         },
         "accepted": "Посмотреть принятое изменение",
-        "workNote": "Четыре вклада в инструкции и пять исправлений кода. Проверка вывода PETL подтвердила существующее поведение; новый фикс не заявлен. Сами приложения принадлежат соответствующим проектам.",
+        "workNote": "Проверка PETL подтвердила существующее поведение HTML-таблиц.",
         "reviewPageNote": "На следующей странице - три технические работы и их текущий статус.",
         "pendingTitle": "Технические работы и текущий статус",
         "pendingIntro": "Три работы с проверками и описанием результата.",
