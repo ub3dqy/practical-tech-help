@@ -10,7 +10,7 @@ I build, configure and deploy AI agents for specific workflows. I can create a n
 
 An agent can sort incoming requests, draft replies or prepare reports. We agree on what it can access and which actions need your approval. I check it on agreed examples and hand over instructions for running and updating it.
 
-Tell me what the agent should do, where it gets its information and what result you expect. I can quote a price and timeline once the scope is clear.
+Tell me what the agent should do, where it gets its information and what result you expect. We can start with a small paid trial for one workflow and agree how to check the result. I can quote a price and timeline once the scope is clear.
 
 ### Try a request-triage agent
 
@@ -55,6 +55,7 @@ Twenty new tests and checks on an Android tablet emulator (API 36) pass, includi
 
 ## Public contributions
 
+- Added the Filecoin Keysmith TypeScript library to the **Chain.Love** SDK catalogue. [Merged contribution](https://github.com/Chain-Love/chain-love/pull/5297).
 - **Tablib:** restored built-in format registration while keeping imports lazy. [Merged fix](https://github.com/jazzband/tablib/pull/715).
 - **Go-Hybrid:** returned JSON serialization errors to the caller and preserved output on invalid handles. [Merged fix](https://github.com/limitlessprojects/Go-Hybrid/pull/1518).
 - **Go-Hybrid:** applied target-platform build rules before choosing a package name. [Merged fix](https://github.com/limitlessprojects/Go-Hybrid/pull/2400).
