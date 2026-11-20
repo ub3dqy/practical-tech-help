@@ -55,6 +55,7 @@ Twenty new tests and checks on an Android tablet emulator (API 36) pass, includi
 
 ## Public contributions
 
+- **ClipForge:** fixed status checks and result retrieval for queued jobs on nested fal.ai model routes. [Merged fix](https://github.com/xixihhhh/clipforge/pull/47).
 - Added the Filecoin Keysmith TypeScript library to the **Chain.Love** SDK catalogue. [Merged contribution](https://github.com/Chain-Love/chain-love/pull/5297).
 - **Tablib:** restored built-in format registration while keeping imports lazy. [Merged fix](https://github.com/jazzband/tablib/pull/715).
 - **Go-Hybrid:** returned JSON serialization errors to the caller and preserved output on invalid handles. [Merged fix](https://github.com/limitlessprojects/Go-Hybrid/pull/1518).

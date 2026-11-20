@@ -55,6 +55,7 @@ python -X utf8 examples/agent-intake/triage.py --language ru examples/agent-inta
 
 ## Открытые вклады в проекты
 
+- **ClipForge:** исправлено получение статуса и результатов задач для моделей fal.ai с вложенными адресами. [Исправление принято](https://github.com/xixihhhh/clipforge/pull/47).
 - Добавлена библиотека Keysmith для Filecoin в каталог **Chain.Love**. [Работа принята](https://github.com/Chain-Love/chain-love/pull/5297).
 - **Tablib:** восстановлена регистрация встроенных форматов с сохранением отложенной загрузки модулей. [Исправление принято](https://github.com/jazzband/tablib/pull/715).
 - **Go-Hybrid:** ошибки преобразования JSON возвращаются вызывающей стороне; неверные идентификаторы не меняют выходные данные. [Исправление принято](https://github.com/limitlessprojects/Go-Hybrid/pull/1518).
